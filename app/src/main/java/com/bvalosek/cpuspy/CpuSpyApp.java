@@ -11,8 +11,8 @@ package com.bvalosek.cpuspy;
 import android.content.Context;
 import android.util.SparseArray;
 
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Utils;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Utils;
 
 /**
  * main application class
