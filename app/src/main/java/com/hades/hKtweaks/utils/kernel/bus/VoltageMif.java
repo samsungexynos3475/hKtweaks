@@ -37,7 +37,7 @@ public class VoltageMif {
 
     public static final String BACKUP = "/data/.hKtweaks/busMif_stock_voltage";
 
-    public static final String VOLTAGE = "/sys/class/devfreq/17000010.devfreq_mif/volt_table";
+    public static final String VOLTAGE = "/sys/class/devfreq/bus_mif/volt_table";
 
     private static final HashMap<String, Boolean> sVoltages = new HashMap<>();
     private static final HashMap<String, Integer> sOffset = new HashMap<>();

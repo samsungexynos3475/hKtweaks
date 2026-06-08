@@ -37,7 +37,7 @@ public class VoltageInt {
 
     public static final String BACKUP = "/data/.hKtweaks/busInt_stock_voltage";
 
-    public static final String VOLTAGE = "/sys/class/devfreq/17000020.devfreq_int/volt_table";
+    public static final String VOLTAGE = "/sys/class/devfreq/bus_int/volt_table";
 
     private static final HashMap<String, Boolean> sVoltages = new HashMap<>();
     private static final HashMap<String, Integer> sOffset = new HashMap<>();
