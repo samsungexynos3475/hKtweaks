@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.services.boot;
+package com.lavenly.hK3475.services.boot;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -29,24 +29,24 @@ import android.os.Build;
 import android.os.Handler;
 import androidx.core.app.NotificationCompat;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.MainActivity;
-import com.hades.hKtweaks.database.Settings;
-import com.hades.hKtweaks.database.tools.customcontrols.Controls;
-import com.hades.hKtweaks.database.tools.profiles.Profiles;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.fragments.kernel.CPUHotplugFragment;
-import com.hades.hKtweaks.services.profile.Tile;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.NotificationId;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.kernel.cpu.MSMPerformance;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.CoreCtl;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.MPDecision;
-import com.hades.hKtweaks.utils.root.Control;
-import com.hades.hKtweaks.utils.root.RootFile;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.MainActivity;
+import com.lavenly.hK3475.database.Settings;
+import com.lavenly.hK3475.database.tools.customcontrols.Controls;
+import com.lavenly.hK3475.database.tools.profiles.Profiles;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.fragments.kernel.CPUHotplugFragment;
+import com.lavenly.hK3475.services.profile.Tile;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.NotificationId;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.kernel.cpu.MSMPerformance;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.CoreCtl;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.MPDecision;
+import com.lavenly.hK3475.utils.root.Control;
+import com.lavenly.hK3475.utils.root.RootFile;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -284,7 +284,7 @@ public class ApplyOnBoot {
 
                 listener.onFinish();
 
-                RootUtils.runCommand("setprop hKtweaks.applied_onboot 1");
+                RootUtils.runCommand("setprop hK3475.applied_onboot 1");
             }
         }).start();
         return true;

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities.tools;
+package com.lavenly.hK3475.activities.tools;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -27,13 +27,13 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.BaseActivity;
-import com.hades.hKtweaks.fragments.tools.downloads.AboutFragment;
-import com.hades.hKtweaks.fragments.tools.downloads.DownloadKernelFragment;
-import com.hades.hKtweaks.fragments.tools.downloads.FeaturesFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.tools.SupportedDownloads;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.BaseActivity;
+import com.lavenly.hK3475.fragments.tools.downloads.AboutFragment;
+import com.lavenly.hK3475.fragments.tools.downloads.DownloadKernelFragment;
+import com.lavenly.hK3475.fragments.tools.downloads.FeaturesFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.tools.SupportedDownloads;
 
 import java.util.LinkedHashMap;
 import java.util.List;

@@ -17,13 +17,13 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import android.view.View;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.views.XYGraph;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.views.XYGraph;
 
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;

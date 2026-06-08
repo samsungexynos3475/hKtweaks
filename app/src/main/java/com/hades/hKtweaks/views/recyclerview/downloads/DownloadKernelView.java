@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview.downloads;
+package com.lavenly.hK3475.views.recyclerview.downloads;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -30,16 +30,16 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.DownloadTask;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.root.RootFile;
-import com.hades.hKtweaks.utils.root.RootUtils;
-import com.hades.hKtweaks.utils.tools.Recovery;
-import com.hades.hKtweaks.utils.tools.SupportedDownloads;
-import com.hades.hKtweaks.views.dialog.Dialog;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.DownloadTask;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.root.RootFile;
+import com.lavenly.hK3475.utils.root.RootUtils;
+import com.lavenly.hK3475.utils.tools.Recovery;
+import com.lavenly.hK3475.utils.tools.SupportedDownloads;
+import com.lavenly.hK3475.views.dialog.Dialog;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 import java.io.File;
 import java.util.List;

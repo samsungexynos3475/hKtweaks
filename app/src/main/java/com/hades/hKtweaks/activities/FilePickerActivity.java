@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -28,14 +28,14 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.appcompat.app.ActionBar;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.root.RootFile;
-import com.hades.hKtweaks.views.dialog.Dialog;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.root.RootFile;
+import com.lavenly.hK3475.views.dialog.Dialog;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 import java.util.ArrayList;
 import java.util.List;

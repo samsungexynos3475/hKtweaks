@@ -17,12 +17,12 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import androidx.appcompat.widget.AppCompatButton;
 import android.view.View;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 /**
  * Created by willi on 28.09.17.

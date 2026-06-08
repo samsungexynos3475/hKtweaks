@@ -17,15 +17,15 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.services.boot;
+package com.lavenly.hK3475.services.boot;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 /**
  * Created by willi on 03.05.16.

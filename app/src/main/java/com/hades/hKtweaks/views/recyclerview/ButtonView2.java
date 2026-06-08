@@ -1,10 +1,10 @@
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import android.view.View;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 /**
  * Created by Morogoku on 16/12/2017.

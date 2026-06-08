@@ -17,13 +17,13 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils;
+package com.lavenly.hK3475.utils;
 
 import android.content.Context;
 import androidx.annotation.ColorRes;
 import androidx.annotation.StyleRes;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

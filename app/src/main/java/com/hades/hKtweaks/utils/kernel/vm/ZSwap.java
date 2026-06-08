@@ -17,13 +17,13 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.vm;
+package com.lavenly.hK3475.utils.kernel.vm;
 
 import android.content.Context;
 
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.root.Control;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.root.Control;
 
 /**
  * Created by willi on 13.08.16.
@@ -33,7 +33,7 @@ public class ZSwap {
 
     private static final String ZSWAP = "/sys/module/zswap/parameters/enabled";
     private static final String MAX_POOL_PERCENT = "/sys/module/zswap/parameters/max_pool_percent";
-    private static final String STOCK_MAX_POOL_PERCENT = "/data/.hKtweaks/max_pool_percent";
+    private static final String STOCK_MAX_POOL_PERCENT = "/data/.hK3475/max_pool_percent";
     private static final String MAX_COMPRESSION_RATIO = "/sys/module/zswap/parameters/max_compression_ratio";
 
     public static void setMaxCompressionRatio(int value, Context context) {

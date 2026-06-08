@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views;
+package com.lavenly.hK3475.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -26,7 +26,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 /**
  * Created by willi on 31.05.16.

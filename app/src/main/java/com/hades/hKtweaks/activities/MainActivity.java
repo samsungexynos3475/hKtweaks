@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -28,45 +28,45 @@ import androidx.core.content.ContextCompat;
 import android.view.View;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.database.tools.profiles.Profiles;
-import com.hades.hKtweaks.fragments.kernel.BusCamFragment;
-import com.hades.hKtweaks.fragments.kernel.BusDispFragment;
-import com.hades.hKtweaks.fragments.kernel.BusIntFragment;
-import com.hades.hKtweaks.fragments.kernel.BusMifFragment;
-import com.hades.hKtweaks.fragments.kernel.CPUVoltageCl0Fragment;
-import com.hades.hKtweaks.fragments.kernel.CPUVoltageCl1Fragment;
-import com.hades.hKtweaks.fragments.kernel.GPUFragment;
-import com.hades.hKtweaks.services.profile.Tile;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.battery.Battery;
-import com.hades.hKtweaks.utils.kernel.bus.VoltageCam;
-import com.hades.hKtweaks.utils.kernel.bus.VoltageDisp;
-import com.hades.hKtweaks.utils.kernel.bus.VoltageInt;
-import com.hades.hKtweaks.utils.kernel.bus.VoltageMif;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUBoost;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.kernel.cpu.MSMPerformance;
-import com.hades.hKtweaks.utils.kernel.cpu.Temperature;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.Hotplug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.QcomBcl;
-import com.hades.hKtweaks.utils.kernel.cpuvoltage.VoltageCl0;
-import com.hades.hKtweaks.utils.kernel.cpuvoltage.VoltageCl1;
-import com.hades.hKtweaks.utils.kernel.gpu.GPU;
-import com.hades.hKtweaks.utils.kernel.gpu.GPUFreqExynos;
-import com.hades.hKtweaks.utils.kernel.io.IO;
-import com.hades.hKtweaks.utils.kernel.ksm.KSM;
-import com.hades.hKtweaks.utils.kernel.misc.Vibration;
-import com.hades.hKtweaks.utils.kernel.screen.Screen;
-import com.hades.hKtweaks.utils.kernel.sound.Sound;
-import com.hades.hKtweaks.utils.kernel.spectrum.Spectrum;
-import com.hades.hKtweaks.utils.kernel.thermal.Thermal;
-import com.hades.hKtweaks.utils.kernel.vm.ZSwap;
-import com.hades.hKtweaks.utils.kernel.wake.Wake;
-import com.hades.hKtweaks.utils.kernel.boefflawakelock.BoefflaWakelock;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.database.tools.profiles.Profiles;
+import com.lavenly.hK3475.fragments.kernel.BusCamFragment;
+import com.lavenly.hK3475.fragments.kernel.BusDispFragment;
+import com.lavenly.hK3475.fragments.kernel.BusIntFragment;
+import com.lavenly.hK3475.fragments.kernel.BusMifFragment;
+import com.lavenly.hK3475.fragments.kernel.CPUVoltageCl0Fragment;
+import com.lavenly.hK3475.fragments.kernel.CPUVoltageCl1Fragment;
+import com.lavenly.hK3475.fragments.kernel.GPUFragment;
+import com.lavenly.hK3475.services.profile.Tile;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.battery.Battery;
+import com.lavenly.hK3475.utils.kernel.bus.VoltageCam;
+import com.lavenly.hK3475.utils.kernel.bus.VoltageDisp;
+import com.lavenly.hK3475.utils.kernel.bus.VoltageInt;
+import com.lavenly.hK3475.utils.kernel.bus.VoltageMif;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUBoost;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.kernel.cpu.MSMPerformance;
+import com.lavenly.hK3475.utils.kernel.cpu.Temperature;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.Hotplug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.QcomBcl;
+import com.lavenly.hK3475.utils.kernel.cpuvoltage.VoltageCl0;
+import com.lavenly.hK3475.utils.kernel.cpuvoltage.VoltageCl1;
+import com.lavenly.hK3475.utils.kernel.gpu.GPU;
+import com.lavenly.hK3475.utils.kernel.gpu.GPUFreqExynos;
+import com.lavenly.hK3475.utils.kernel.io.IO;
+import com.lavenly.hK3475.utils.kernel.ksm.KSM;
+import com.lavenly.hK3475.utils.kernel.misc.Vibration;
+import com.lavenly.hK3475.utils.kernel.screen.Screen;
+import com.lavenly.hK3475.utils.kernel.sound.Sound;
+import com.lavenly.hK3475.utils.kernel.spectrum.Spectrum;
+import com.lavenly.hK3475.utils.kernel.thermal.Thermal;
+import com.lavenly.hK3475.utils.kernel.vm.ZSwap;
+import com.lavenly.hK3475.utils.kernel.wake.Wake;
+import com.lavenly.hK3475.utils.kernel.boefflawakelock.BoefflaWakelock;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 import java.lang.ref.WeakReference;
 
@@ -160,7 +160,7 @@ public class MainActivity extends BaseActivity {
             }
 
             // If voltages are saved on Service.java, mVoltageSaved = 1
-            int mVoltageSaved = Utils.strToInt(RootUtils.getProp("hKtweaks.voltage_saved"));
+            int mVoltageSaved = Utils.strToInt(RootUtils.getProp("hK3475.voltage_saved"));
 
             // Check if system is rebooted
             boolean mIsBooted = AppSettings.getBoolean("is_booted", true, mRefActivity.get());
@@ -194,9 +194,9 @@ public class MainActivity extends BaseActivity {
             }
             AppSettings.saveBoolean("is_booted", false, mRefActivity.get());
 
-            // Check if exist /data/.hKtweaks folder
-            if (!Utils.existFile("/data/.hKtweaks")) {
-                RootUtils.runCommand("mkdir /data/.hKtweaks");
+            // Check if exist /data/.hK3475 folder
+            if (!Utils.existFile("/data/.hK3475")) {
+                RootUtils.runCommand("mkdir /data/.hK3475");
             }
 
             // Check if kernel is changed
@@ -224,7 +224,7 @@ public class MainActivity extends BaseActivity {
                 AppSettings.saveBoolean("battery_saved", false, mRefActivity.get());
             }
 
-            // Check if hKtweaks version is changed
+            // Check if hK3475 version is changed
             String appVersionOld = AppSettings.getString("app_version_old", "", mRefActivity.get());
             String appVersionNew = Utils.appVersion();
             AppSettings.saveBoolean("show_changelog", true, mRefActivity.get());
@@ -299,7 +299,7 @@ public class MainActivity extends BaseActivity {
             // If has MaxPoolPercent save file
             if (!AppSettings.getBoolean("max_pool_percent_saved", false, mRefActivity.get())) {
                 if (ZSwap.hasMaxPoolPercent()) {
-                    RootUtils.runCommand("cp /sys/module/zswap/parameters/max_pool_percent /data/.hKtweaks/max_pool_percent");
+                    RootUtils.runCommand("cp /sys/module/zswap/parameters/max_pool_percent /data/.hK3475/max_pool_percent");
                     AppSettings.saveBoolean("max_pool_percent_saved", true, mRefActivity.get());
                 }
             }

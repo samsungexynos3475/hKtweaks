@@ -17,15 +17,15 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview.customcontrols;
+package com.lavenly.hK3475.views.recyclerview.customcontrols;
 
 import android.app.Activity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.root.RootUtils;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.root.RootUtils;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 /**
  * Created by willi on 01.07.16.

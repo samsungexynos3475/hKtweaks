@@ -17,10 +17,10 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.tools.customcontrols;
+package com.lavenly.hK3475.utils.tools.customcontrols;
 
-import com.hades.hKtweaks.database.tools.customcontrols.Controls;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.database.tools.customcontrols.Controls;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 import java.util.List;
 import java.util.Random;

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.app.KeyguardManager;
 import android.os.Build;
@@ -35,10 +35,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.FingerprintUiHelper;
-import com.hades.hKtweaks.utils.Utils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.FingerprintUiHelper;
+import com.lavenly.hK3475.utils.Utils;
 import com.mattprecious.swirl.SwirlView;
 
 import java.io.IOException;

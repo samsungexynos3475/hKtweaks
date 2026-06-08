@@ -17,14 +17,14 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.statistics;
+package com.lavenly.hK3475.fragments.statistics;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.TitleView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.TitleView;
 
 import java.util.ArrayList;
 import java.util.List;

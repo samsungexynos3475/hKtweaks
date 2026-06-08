@@ -17,10 +17,10 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.database.tools.customcontrols;
+package com.lavenly.hK3475.database.tools.customcontrols;
 
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.tools.customcontrols.Items;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.tools.customcontrols.Items;
 
 import org.json.JSONException;
 import org.json.JSONObject;

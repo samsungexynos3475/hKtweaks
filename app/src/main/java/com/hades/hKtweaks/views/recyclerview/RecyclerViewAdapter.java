@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -26,8 +26,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.AppSettings;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.AppSettings;
 
 import java.util.HashMap;
 import java.util.List;

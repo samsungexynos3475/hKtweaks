@@ -17,31 +17,31 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.kernel;
+package com.lavenly.hK3475.fragments.kernel;
 
 import android.text.InputType;
 import android.util.SparseArray;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.fragments.BaseFragment;
-import com.hades.hKtweaks.fragments.DescriptionFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUBoost;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.kernel.cpu.Misc;
-import com.hades.hKtweaks.views.dialog.Dialog;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.GenericSelectView2;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.SeekBarView;
-import com.hades.hKtweaks.views.recyclerview.SelectView;
-import com.hades.hKtweaks.views.recyclerview.SwitchView;
-import com.hades.hKtweaks.views.recyclerview.XYGraphView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.fragments.BaseFragment;
+import com.lavenly.hK3475.fragments.DescriptionFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUBoost;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.kernel.cpu.Misc;
+import com.lavenly.hK3475.views.dialog.Dialog;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.GenericSelectView2;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.SeekBarView;
+import com.lavenly.hK3475.views.recyclerview.SelectView;
+import com.lavenly.hK3475.views.recyclerview.SwitchView;
+import com.lavenly.hK3475.views.recyclerview.XYGraphView;
 
 import java.util.ArrayList;
 import java.util.Arrays;

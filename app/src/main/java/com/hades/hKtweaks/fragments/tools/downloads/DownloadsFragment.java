@@ -17,20 +17,20 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.tools.downloads;
+package com.lavenly.hK3475.fragments.tools.downloads;
 
 import android.Manifest;
 import android.content.Intent;
 import com.google.android.material.snackbar.Snackbar;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.tools.DownloadsActivity;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.WebpageReader;
-import com.hades.hKtweaks.utils.tools.SupportedDownloads;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.downloads.KernelItemView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.tools.DownloadsActivity;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.WebpageReader;
+import com.lavenly.hK3475.utils.tools.SupportedDownloads;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.downloads.KernelItemView;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -30,7 +30,7 @@ import androidx.appcompat.widget.AppCompatEditText;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 /**
  * Created by willi on 01.07.16.

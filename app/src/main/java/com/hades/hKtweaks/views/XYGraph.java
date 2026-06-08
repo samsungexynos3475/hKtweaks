@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views;
+package com.lavenly.hK3475.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,9 +30,9 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
 
 import java.util.ArrayList;
 

@@ -1,11 +1,11 @@
-package com.hades.hKtweaks.utils.kernel.gpu;
+package com.lavenly.hK3475.utils.kernel.gpu;
 
 import android.content.Context;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.root.Control;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.root.Control;
 
 public class AdrenoBoost {
 

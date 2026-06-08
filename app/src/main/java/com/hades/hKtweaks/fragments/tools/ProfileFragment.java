@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.tools;
+package com.lavenly.hK3475.fragments.tools;
 
 import android.Manifest;
 import android.appwidget.AppWidgetManager;
@@ -41,32 +41,32 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.FilePickerActivity;
-import com.hades.hKtweaks.activities.NavigationActivity;
-import com.hades.hKtweaks.activities.tools.profile.ProfileActivity;
-import com.hades.hKtweaks.activities.tools.profile.ProfileEditActivity;
-import com.hades.hKtweaks.activities.tools.profile.ProfileTaskerActivity;
-import com.hades.hKtweaks.database.tools.profiles.ExportProfile;
-import com.hades.hKtweaks.database.tools.profiles.ImportProfile;
-import com.hades.hKtweaks.database.tools.profiles.Profiles;
-import com.hades.hKtweaks.fragments.BaseFragment;
-import com.hades.hKtweaks.fragments.DescriptionFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.fragments.SwitcherFragment;
-import com.hades.hKtweaks.services.boot.ApplyOnBoot;
-import com.hades.hKtweaks.services.profile.Tile;
-import com.hades.hKtweaks.services.profile.Widget;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.root.Control;
-import com.hades.hKtweaks.utils.root.RootUtils;
-import com.hades.hKtweaks.views.dialog.Dialog;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.FilePickerActivity;
+import com.lavenly.hK3475.activities.NavigationActivity;
+import com.lavenly.hK3475.activities.tools.profile.ProfileActivity;
+import com.lavenly.hK3475.activities.tools.profile.ProfileEditActivity;
+import com.lavenly.hK3475.activities.tools.profile.ProfileTaskerActivity;
+import com.lavenly.hK3475.database.tools.profiles.ExportProfile;
+import com.lavenly.hK3475.database.tools.profiles.ImportProfile;
+import com.lavenly.hK3475.database.tools.profiles.Profiles;
+import com.lavenly.hK3475.fragments.BaseFragment;
+import com.lavenly.hK3475.fragments.DescriptionFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.fragments.SwitcherFragment;
+import com.lavenly.hK3475.services.boot.ApplyOnBoot;
+import com.lavenly.hK3475.services.profile.Tile;
+import com.lavenly.hK3475.services.profile.Widget;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.root.Control;
+import com.lavenly.hK3475.utils.root.RootUtils;
+import com.lavenly.hK3475.views.dialog.Dialog;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

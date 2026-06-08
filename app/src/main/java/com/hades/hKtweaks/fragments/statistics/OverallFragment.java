@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.statistics;
+package com.lavenly.hK3475.fragments.statistics;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -40,23 +40,23 @@ import androidx.annotation.Nullable;
 
 import com.bvalosek.cpuspy.CpuSpyApp;
 import com.bvalosek.cpuspy.CpuStateMonitor;
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.BaseFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.AppUpdaterTask;
-import com.hades.hKtweaks.utils.Log;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.kernel.gpu.GPUFreq;
-import com.hades.hKtweaks.views.XYGraph;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.StatsView;
-import com.hades.hKtweaks.views.recyclerview.overallstatistics.FrequencyButtonView;
-import com.hades.hKtweaks.views.recyclerview.overallstatistics.FrequencyTableView;
-import com.hades.hKtweaks.views.recyclerview.overallstatistics.TemperatureView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.BaseFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.AppUpdaterTask;
+import com.lavenly.hK3475.utils.Log;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.kernel.gpu.GPUFreq;
+import com.lavenly.hK3475.views.XYGraph;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.StatsView;
+import com.lavenly.hK3475.views.recyclerview.overallstatistics.FrequencyButtonView;
+import com.lavenly.hK3475.views.recyclerview.overallstatistics.FrequencyTableView;
+import com.lavenly.hK3475.views.recyclerview.overallstatistics.TemperatureView;
 
 import java.util.ArrayList;
 import java.util.List;

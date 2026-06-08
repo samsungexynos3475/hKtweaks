@@ -17,18 +17,18 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.statistics;
+package com.lavenly.hK3475.fragments.statistics;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.DescriptionFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.kernel.battery.Battery;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.utils.kernel.gpu.GPUFreqExynos;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.DescriptionFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.kernel.battery.Battery;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.kernel.gpu.GPUFreqExynos;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 import java.util.List;
 

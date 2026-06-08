@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments;
+package com.lavenly.hK3475.fragments;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -28,35 +28,35 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.tools.profile.ProfileActivity;
-import com.hades.hKtweaks.fragments.kernel.BatteryFragment;
-import com.hades.hKtweaks.fragments.kernel.BoefflaWakelockFragment;
-import com.hades.hKtweaks.fragments.kernel.BusCamFragment;
-import com.hades.hKtweaks.fragments.kernel.BusDispFragment;
-import com.hades.hKtweaks.fragments.kernel.BusIntFragment;
-import com.hades.hKtweaks.fragments.kernel.BusMifFragment;
-import com.hades.hKtweaks.fragments.kernel.CPUFragment;
-import com.hades.hKtweaks.fragments.kernel.CPUHotplugFragment;
-import com.hades.hKtweaks.fragments.kernel.CPUVoltageCl0Fragment;
-import com.hades.hKtweaks.fragments.kernel.CPUVoltageCl1Fragment;
-import com.hades.hKtweaks.fragments.kernel.EntropyFragment;
-import com.hades.hKtweaks.fragments.kernel.GPUFragment;
-import com.hades.hKtweaks.fragments.kernel.DvfsFragment;
-import com.hades.hKtweaks.fragments.kernel.HmpFragment;
-import com.hades.hKtweaks.fragments.kernel.IOFragment;
-import com.hades.hKtweaks.fragments.kernel.KSMFragment;
-import com.hades.hKtweaks.fragments.kernel.LEDFragment;
-import com.hades.hKtweaks.fragments.kernel.LMKFragment;
-import com.hades.hKtweaks.fragments.kernel.WakelockFragment;
-import com.hades.hKtweaks.fragments.kernel.MiscFragment;
-import com.hades.hKtweaks.fragments.kernel.ScreenFragment;
-import com.hades.hKtweaks.fragments.kernel.SoundFragment;
-import com.hades.hKtweaks.fragments.kernel.ThermalFragment;
-import com.hades.hKtweaks.fragments.kernel.VMFragment;
-import com.hades.hKtweaks.fragments.kernel.WakeFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.AppSettings;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.tools.profile.ProfileActivity;
+import com.lavenly.hK3475.fragments.kernel.BatteryFragment;
+import com.lavenly.hK3475.fragments.kernel.BoefflaWakelockFragment;
+import com.lavenly.hK3475.fragments.kernel.BusCamFragment;
+import com.lavenly.hK3475.fragments.kernel.BusDispFragment;
+import com.lavenly.hK3475.fragments.kernel.BusIntFragment;
+import com.lavenly.hK3475.fragments.kernel.BusMifFragment;
+import com.lavenly.hK3475.fragments.kernel.CPUFragment;
+import com.lavenly.hK3475.fragments.kernel.CPUHotplugFragment;
+import com.lavenly.hK3475.fragments.kernel.CPUVoltageCl0Fragment;
+import com.lavenly.hK3475.fragments.kernel.CPUVoltageCl1Fragment;
+import com.lavenly.hK3475.fragments.kernel.EntropyFragment;
+import com.lavenly.hK3475.fragments.kernel.GPUFragment;
+import com.lavenly.hK3475.fragments.kernel.DvfsFragment;
+import com.lavenly.hK3475.fragments.kernel.HmpFragment;
+import com.lavenly.hK3475.fragments.kernel.IOFragment;
+import com.lavenly.hK3475.fragments.kernel.KSMFragment;
+import com.lavenly.hK3475.fragments.kernel.LEDFragment;
+import com.lavenly.hK3475.fragments.kernel.LMKFragment;
+import com.lavenly.hK3475.fragments.kernel.WakelockFragment;
+import com.lavenly.hK3475.fragments.kernel.MiscFragment;
+import com.lavenly.hK3475.fragments.kernel.ScreenFragment;
+import com.lavenly.hK3475.fragments.kernel.SoundFragment;
+import com.lavenly.hK3475.fragments.kernel.ThermalFragment;
+import com.lavenly.hK3475.fragments.kernel.VMFragment;
+import com.lavenly.hK3475.fragments.kernel.WakeFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.AppSettings;
 
 import java.util.HashMap;
 

@@ -17,9 +17,9 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.screen;
+package com.lavenly.hK3475.utils.kernel.screen;
 
-import com.hades.hKtweaks.utils.Log;
+import com.lavenly.hK3475.utils.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;

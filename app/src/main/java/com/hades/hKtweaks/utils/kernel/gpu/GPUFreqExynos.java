@@ -17,15 +17,15 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.gpu;
+package com.lavenly.hK3475.utils.kernel.gpu;
 
 import android.content.Context;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.root.Control;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.root.Control;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -46,7 +46,7 @@ public class GPUFreqExynos {
         return sIOInstance;
     }
 
-    public static final String BACKUP = "/data/.hKtweaks/gpu_stock_voltage";
+    public static final String BACKUP = "/data/.hK3475/gpu_stock_voltage";
 
     private static final String MAX_FREQ_STOCK = "/sys/kernel/gpu/gpu_max_clock";
     private static final String MIN_FREQ_STOCK = "/sys/kernel/gpu/gpu_min_clock";

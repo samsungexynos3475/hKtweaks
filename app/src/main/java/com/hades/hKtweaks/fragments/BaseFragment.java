@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments;
+package com.lavenly.hK3475.fragments;
 
 import android.content.pm.PackageManager;
 import android.os.Build;

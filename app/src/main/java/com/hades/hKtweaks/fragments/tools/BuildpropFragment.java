@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.tools;
+package com.lavenly.hK3475.fragments.tools;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -37,16 +37,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.BaseFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.root.RootUtils;
-import com.hades.hKtweaks.utils.tools.Buildprop;
-import com.hades.hKtweaks.views.dialog.Dialog;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.BaseFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.root.RootUtils;
+import com.lavenly.hK3475.utils.tools.Buildprop;
+import com.lavenly.hK3475.views.dialog.Dialog;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 import java.util.LinkedHashMap;
 import java.util.List;

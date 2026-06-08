@@ -17,13 +17,13 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.bus;
+package com.lavenly.hK3475.utils.kernel.bus;
 
 import android.content.Context;
 
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.root.Control;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.root.Control;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,7 +35,7 @@ import java.util.List;
  */
 public class VoltageInt {
 
-    public static final String BACKUP = "/data/.hKtweaks/busInt_stock_voltage";
+    public static final String BACKUP = "/data/.hK3475/busInt_stock_voltage";
 
     public static final String VOLTAGE = "/sys/class/devfreq/bus_int/volt_table";
 

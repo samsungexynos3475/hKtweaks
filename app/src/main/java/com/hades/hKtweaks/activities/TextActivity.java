@@ -17,14 +17,14 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.Utils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.Utils;
 
 /**
  * Created by willi on 14.04.16.

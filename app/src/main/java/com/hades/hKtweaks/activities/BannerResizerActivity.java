@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -28,11 +28,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.BaseFragment;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.BaseFragment;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
 
 import org.adw.library.widgets.discreteseekbar.DiscreteSeekBar;
 

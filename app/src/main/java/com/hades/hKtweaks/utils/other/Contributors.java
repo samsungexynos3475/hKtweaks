@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.other;
+package com.lavenly.hK3475.utils.other;
 
 import org.json.JSONArray;
 import org.json.JSONException;

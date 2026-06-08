@@ -17,16 +17,16 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.other;
+package com.lavenly.hK3475.fragments.other;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.WebpageReader;
-import com.hades.hKtweaks.utils.other.Contributors;
-import com.hades.hKtweaks.views.recyclerview.ContributorView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.WebpageReader;
+import com.lavenly.hK3475.utils.other.Contributors;
+import com.lavenly.hK3475.views.recyclerview.ContributorView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 import java.util.List;
 

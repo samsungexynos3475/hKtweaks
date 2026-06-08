@@ -1,4 +1,4 @@
-package com.hades.hKtweaks.utils.kernel.spectrum;
+package com.lavenly.hK3475.utils.kernel.spectrum;
 
 import android.annotation.TargetApi;
 import android.graphics.drawable.Icon;
@@ -6,8 +6,8 @@ import android.os.Build;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.AppSettings;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.AppSettings;
 
 /**
  * Created by Morogoku on 01/08/2017.

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils;
+package com.lavenly.hK3475.utils;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -36,8 +36,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.views.dialog.Dialog;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.views.dialog.Dialog;
 
 /**
  * Created by willi on 16.04.16.

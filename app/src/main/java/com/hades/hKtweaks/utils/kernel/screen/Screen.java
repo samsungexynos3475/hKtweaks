@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.screen;
+package com.lavenly.hK3475.utils.kernel.screen;
 
 /**
  * Created by willi on 01.06.16.

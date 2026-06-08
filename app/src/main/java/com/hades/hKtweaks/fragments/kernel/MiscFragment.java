@@ -17,32 +17,32 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.kernel;
+package com.lavenly.hK3475.fragments.kernel;
 
 import android.content.Context;
 import android.os.Vibrator;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.misc.Misc;
-import com.hades.hKtweaks.utils.kernel.misc.PowerSuspend;
-import com.hades.hKtweaks.utils.kernel.misc.Pwm;
-import com.hades.hKtweaks.utils.kernel.misc.Selinux;
-import com.hades.hKtweaks.utils.kernel.misc.Vibration;
-import com.hades.hKtweaks.utils.kernel.misc.Wakelocks;
-import com.hades.hKtweaks.utils.root.RootUtils;
-import com.hades.hKtweaks.views.recyclerview.ButtonView;
-import com.hades.hKtweaks.views.recyclerview.ButtonView2;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.GenericSelectView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.SeekBarView;
-import com.hades.hKtweaks.views.recyclerview.SelectView;
-import com.hades.hKtweaks.views.recyclerview.SwitchView;
-import com.hades.hKtweaks.views.recyclerview.TitleView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.misc.Misc;
+import com.lavenly.hK3475.utils.kernel.misc.PowerSuspend;
+import com.lavenly.hK3475.utils.kernel.misc.Pwm;
+import com.lavenly.hK3475.utils.kernel.misc.Selinux;
+import com.lavenly.hK3475.utils.kernel.misc.Vibration;
+import com.lavenly.hK3475.utils.kernel.misc.Wakelocks;
+import com.lavenly.hK3475.utils.root.RootUtils;
+import com.lavenly.hK3475.views.recyclerview.ButtonView;
+import com.lavenly.hK3475.views.recyclerview.ButtonView2;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.GenericSelectView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.SeekBarView;
+import com.lavenly.hK3475.views.recyclerview.SelectView;
+import com.lavenly.hK3475.views.recyclerview.SwitchView;
+import com.lavenly.hK3475.views.recyclerview.TitleView;
 
 import java.util.ArrayList;
 import java.util.Arrays;

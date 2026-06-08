@@ -17,16 +17,16 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities.tools;
+package com.lavenly.hK3475.activities.tools;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.BaseActivity;
-import com.hades.hKtweaks.fragments.tools.customcontrols.CreateFragment;
-import com.hades.hKtweaks.utils.tools.customcontrols.Items;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.BaseActivity;
+import com.lavenly.hK3475.fragments.tools.customcontrols.CreateFragment;
+import com.lavenly.hK3475.utils.tools.customcontrols.Items;
 
 import java.util.ArrayList;
 

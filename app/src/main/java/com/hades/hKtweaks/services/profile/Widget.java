@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.services.profile;
+package com.lavenly.hK3475.services.profile;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -31,12 +31,12 @@ import android.util.SparseArray;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.database.tools.profiles.Profiles;
-import com.hades.hKtweaks.services.boot.ApplyOnBoot;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.database.tools.profiles.Profiles;
+import com.lavenly.hK3475.services.boot.ApplyOnBoot;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 import java.util.ArrayList;
 import java.util.List;

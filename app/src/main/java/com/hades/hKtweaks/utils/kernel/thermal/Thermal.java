@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.thermal;
+package com.lavenly.hK3475.utils.kernel.thermal;
 
 /**
  * Created by willi on 12.05.16.

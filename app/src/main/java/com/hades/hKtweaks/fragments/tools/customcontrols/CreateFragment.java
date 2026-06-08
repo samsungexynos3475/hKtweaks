@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.tools.customcontrols;
+package com.lavenly.hK3475.fragments.tools.customcontrols;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -29,14 +29,14 @@ import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.EditorActivity;
-import com.hades.hKtweaks.activities.tools.CustomControlsActivity;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.tools.customcontrols.Items;
-import com.hades.hKtweaks.views.recyclerview.EditTextView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.customcontrols.CodeView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.EditorActivity;
+import com.lavenly.hK3475.activities.tools.CustomControlsActivity;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.tools.customcontrols.Items;
+import com.lavenly.hK3475.views.recyclerview.EditTextView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.customcontrols.CodeView;
 
 import java.util.ArrayList;
 import java.util.HashMap;

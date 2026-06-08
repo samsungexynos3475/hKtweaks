@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.dialog;
+package com.lavenly.hK3475.views.dialog;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -30,8 +30,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
 import com.viewpagerindicator.CirclePageIndicator;
 
 import java.util.List;

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import androidx.appcompat.widget.AppCompatEditText;
 import android.text.Editable;
@@ -25,7 +25,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 /**
  * Created by willi on 01.07.16.

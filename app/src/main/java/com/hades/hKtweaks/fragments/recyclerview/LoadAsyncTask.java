@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.recyclerview;
+package com.lavenly.hK3475.fragments.recyclerview;
 
 import android.os.AsyncTask;
 import androidx.annotation.NonNull;

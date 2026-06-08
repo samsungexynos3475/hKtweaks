@@ -17,28 +17,28 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.kernel;
+package com.lavenly.hK3475.fragments.kernel;
 
 import android.text.InputType;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
 
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.utils.kernel.vm.VM;
-import com.hades.hKtweaks.utils.kernel.vm.ZRAM;
-import com.hades.hKtweaks.utils.kernel.vm.ZSwap;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.GenericSelectView2;
-import com.hades.hKtweaks.views.recyclerview.ProgressBarView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.SeekBarView;
-import com.hades.hKtweaks.views.recyclerview.SelectView;
-import com.hades.hKtweaks.views.recyclerview.SwitchView;
-import com.hades.hKtweaks.views.recyclerview.TitleView;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.kernel.vm.VM;
+import com.lavenly.hK3475.utils.kernel.vm.ZRAM;
+import com.lavenly.hK3475.utils.kernel.vm.ZSwap;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.GenericSelectView2;
+import com.lavenly.hK3475.views.recyclerview.ProgressBarView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.SeekBarView;
+import com.lavenly.hK3475.views.recyclerview.SelectView;
+import com.lavenly.hK3475.views.recyclerview.SwitchView;
+import com.lavenly.hK3475.views.recyclerview.TitleView;
 
 import java.util.ArrayList;
 import java.util.List;

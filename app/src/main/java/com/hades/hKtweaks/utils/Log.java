@@ -17,9 +17,9 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils;
+package com.lavenly.hK3475.utils;
 
-import com.hades.hKtweaks.BuildConfig;
+import com.lavenly.hK3475.BuildConfig;
 
 /**
  * Created by willi on 22.03.18.
@@ -27,7 +27,7 @@ import com.hades.hKtweaks.BuildConfig;
 
 public class Log {
 
-    private static final String TAG = "hKtweaks";
+    private static final String TAG = "hK3475";
 
     public static void i(String message) {
         android.util.Log.i(TAG, getMessage(message));

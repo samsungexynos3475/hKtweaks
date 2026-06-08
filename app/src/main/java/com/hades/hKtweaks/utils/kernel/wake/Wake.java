@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.wake;
+package com.lavenly.hK3475.utils.kernel.wake;
 
 /**
  * Created by willi on 23.06.16.

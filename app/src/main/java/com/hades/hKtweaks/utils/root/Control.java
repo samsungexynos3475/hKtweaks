@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.root;
+package com.lavenly.hK3475.utils.root;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -25,9 +25,9 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
-import com.hades.hKtweaks.database.Settings;
-import com.hades.hKtweaks.services.monitor.Monitor;
-import com.hades.hKtweaks.utils.Log;
+import com.lavenly.hK3475.database.Settings;
+import com.lavenly.hK3475.services.monitor.Monitor;
+import com.lavenly.hK3475.utils.Log;
 
 import java.util.LinkedHashMap;
 import java.util.List;

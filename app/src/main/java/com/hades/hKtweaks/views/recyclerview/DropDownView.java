@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import android.animation.ValueAnimator;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -27,7 +27,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 import java.util.ArrayList;
 import java.util.List;

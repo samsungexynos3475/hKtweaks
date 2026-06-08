@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.tools;
+package com.lavenly.hK3475.fragments.tools;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -28,16 +28,16 @@ import android.graphics.drawable.Drawable;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.DataSharingSearchActivity;
-import com.hades.hKtweaks.fragments.DescriptionFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.services.monitor.Monitor;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.SwitchView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.DataSharingSearchActivity;
+import com.lavenly.hK3475.fragments.DescriptionFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.services.monitor.Monitor;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.SwitchView;
 
 import java.util.List;
 

@@ -17,12 +17,12 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.database.tools.customcontrols;
+package com.lavenly.hK3475.database.tools.customcontrols;
 
 import android.content.Context;
 
-import com.hades.hKtweaks.database.Provider;
-import com.hades.hKtweaks.utils.tools.customcontrols.Items;
+import com.lavenly.hK3475.database.Provider;
+import com.lavenly.hK3475.utils.tools.customcontrols.Items;
 
 import org.json.JSONException;
 import org.json.JSONObject;

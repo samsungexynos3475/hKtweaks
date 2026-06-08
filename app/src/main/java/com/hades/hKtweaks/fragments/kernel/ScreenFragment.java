@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.kernel;
+package com.lavenly.hK3475.fragments.kernel;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -26,23 +26,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.fragments.BaseFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.screen.Calibration;
-import com.hades.hKtweaks.utils.kernel.screen.Gamma;
-import com.hades.hKtweaks.utils.kernel.screen.GammaProfiles;
-import com.hades.hKtweaks.utils.kernel.screen.Misc;
-import com.hades.hKtweaks.views.ColorTable;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DropDownView;
-import com.hades.hKtweaks.views.recyclerview.GenericSelectView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.SeekBarView;
-import com.hades.hKtweaks.views.recyclerview.SwitchView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.fragments.BaseFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.screen.Calibration;
+import com.lavenly.hK3475.utils.kernel.screen.Gamma;
+import com.lavenly.hK3475.utils.kernel.screen.GammaProfiles;
+import com.lavenly.hK3475.utils.kernel.screen.Misc;
+import com.lavenly.hK3475.views.ColorTable;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DropDownView;
+import com.lavenly.hK3475.views.recyclerview.GenericSelectView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.SeekBarView;
+import com.lavenly.hK3475.views.recyclerview.SwitchView;
 
 import java.util.ArrayList;
 import java.util.List;

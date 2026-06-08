@@ -17,14 +17,14 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.cpu;
+package com.lavenly.hK3475.utils.kernel.cpu;
 
 import android.content.Context;
 import android.os.Build;
-import com.hades.hKtweaks.utils.Log;
+import com.lavenly.hK3475.utils.Log;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.Utils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

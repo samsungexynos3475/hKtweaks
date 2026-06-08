@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.other;
+package com.lavenly.hK3475.fragments.other;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -52,19 +52,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.BannerResizerActivity;
-import com.hades.hKtweaks.activities.MainActivity;
-import com.hades.hKtweaks.activities.NavigationActivity;
-import com.hades.hKtweaks.services.boot.ApplyOnBootService;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Themes;
-import com.hades.hKtweaks.utils.AppUpdaterTask;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.root.RootUtils;
-import com.hades.hKtweaks.views.BorderCircleView;
-import com.hades.hKtweaks.views.dialog.Dialog;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.BannerResizerActivity;
+import com.lavenly.hK3475.activities.MainActivity;
+import com.lavenly.hK3475.activities.NavigationActivity;
+import com.lavenly.hK3475.services.boot.ApplyOnBootService;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Themes;
+import com.lavenly.hK3475.utils.AppUpdaterTask;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.root.RootUtils;
+import com.lavenly.hK3475.views.BorderCircleView;
+import com.lavenly.hK3475.views.dialog.Dialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -354,8 +354,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
         alert.setNegativeButton(getString(R.string.cancel), (dialogInterface, i) -> {
         });
         alert.setPositiveButton(getString(R.string.ok), (dialog, id) -> {
-                RootUtils.runCommand("rm -rf /data/.hKtweaks");
-                RootUtils.runCommand("pm clear com.hades.hKtweaks");
+                RootUtils.runCommand("rm -rf /data/.hK3475");
+                RootUtils.runCommand("pm clear com.lavenly.hK3475");
         });
         alert.show();
     }

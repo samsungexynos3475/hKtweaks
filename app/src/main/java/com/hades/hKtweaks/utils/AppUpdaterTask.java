@@ -1,11 +1,11 @@
-package com.hades.hKtweaks.utils;
+package com.lavenly.hK3475.utils;
 
 import android.content.Context;
 
 import com.github.javiersantos.appupdater.AppUpdater;
 import com.github.javiersantos.appupdater.enums.Display;
 import com.github.javiersantos.appupdater.enums.UpdateFrom;
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 /**
  * Created by Morogoku on 12/01/2018.

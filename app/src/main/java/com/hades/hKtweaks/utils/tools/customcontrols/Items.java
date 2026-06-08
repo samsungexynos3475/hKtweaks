@@ -17,13 +17,13 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.tools.customcontrols;
+package com.lavenly.hK3475.utils.tools.customcontrols;
 
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

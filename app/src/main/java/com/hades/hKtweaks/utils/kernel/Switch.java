@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel;
+package com.lavenly.hK3475.utils.kernel;
 
 /**
  * Created by willi on 21.08.17.

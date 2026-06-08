@@ -17,17 +17,17 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.services;
+package com.lavenly.hK3475.services;
 
 import android.content.Intent;
 
 import com.google.android.apps.dashclock.api.DashClockExtension;
 import com.google.android.apps.dashclock.api.ExtensionData;
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.MainActivity;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.kernel.gpu.GPUFreq;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.MainActivity;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.kernel.gpu.GPUFreq;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 /**
  * Created by willi on 21.07.16.

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.services.boot;
+package com.lavenly.hK3475.services.boot;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -33,18 +33,18 @@ import android.os.Messenger;
 import android.os.RemoteException;
 import androidx.annotation.Nullable;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.AppUpdaterTask;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.utils.NotificationId;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.cpuvoltage.VoltageCl0;
-import com.hades.hKtweaks.utils.kernel.cpuvoltage.VoltageCl1;
-import com.hades.hKtweaks.utils.kernel.gpu.GPUFreqExynos;
-import com.hades.hKtweaks.utils.kernel.boefflawakelock.BoefflaWakelock;
-import com.hades.hKtweaks.utils.kernel.spectrum.Spectrum;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.AppUpdaterTask;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.NotificationId;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.cpuvoltage.VoltageCl0;
+import com.lavenly.hK3475.utils.kernel.cpuvoltage.VoltageCl1;
+import com.lavenly.hK3475.utils.kernel.gpu.GPUFreqExynos;
+import com.lavenly.hK3475.utils.kernel.boefflawakelock.BoefflaWakelock;
+import com.lavenly.hK3475.utils.kernel.spectrum.Spectrum;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 /**
  * Created by willi on 03.05.16.
@@ -114,7 +114,7 @@ public class ApplyOnBootService extends Service {
                 RootUtils.runCommand("cp " + GPUFreqExynos.getInstance().AVAILABLE_VOLTS + " " + GPUFreqExynos.BACKUP);
                 AppSettings.saveBoolean("gpu_voltage_saved", true, this);
             }
-            RootUtils.runCommand("setprop hKtweaks.voltage_saved 1");
+            RootUtils.runCommand("setprop hK3475.voltage_saved 1");
         }
 
         Messenger messenger = null;

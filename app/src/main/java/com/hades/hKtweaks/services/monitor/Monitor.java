@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.services.monitor;
+package com.lavenly.hK3475.services.monitor;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -34,16 +34,16 @@ import android.os.IBinder;
 import android.os.SystemClock;
 import androidx.annotation.Nullable;
 
-import com.hades.hKtweaks.BuildConfig;
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.MainActivity;
-import com.hades.hKtweaks.activities.NavigationActivity;
-import com.hades.hKtweaks.database.Settings;
-import com.hades.hKtweaks.fragments.tools.DataSharingFragment;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.server.ServerCreateDevice;
+import com.lavenly.hK3475.BuildConfig;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.MainActivity;
+import com.lavenly.hK3475.activities.NavigationActivity;
+import com.lavenly.hK3475.database.Settings;
+import com.lavenly.hK3475.fragments.tools.DataSharingFragment;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.server.ServerCreateDevice;
 
 import org.json.JSONArray;
 import org.json.JSONException;

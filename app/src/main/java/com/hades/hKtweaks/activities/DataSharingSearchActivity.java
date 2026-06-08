@@ -17,22 +17,22 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.server.DeviceInfo;
-import com.hades.hKtweaks.utils.server.ServerSearchDevice;
-import com.hades.hKtweaks.views.dialog.Dialog;
-import com.hades.hKtweaks.views.recyclerview.ButtonView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.datasharing.DataSharingDeviceView;
-import com.hades.hKtweaks.views.recyclerview.datasharing.DataSharingPageView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.server.DeviceInfo;
+import com.lavenly.hK3475.utils.server.ServerSearchDevice;
+import com.lavenly.hK3475.views.dialog.Dialog;
+import com.lavenly.hK3475.views.recyclerview.ButtonView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.datasharing.DataSharingDeviceView;
+import com.lavenly.hK3475.views.recyclerview.datasharing.DataSharingPageView;
 
 import java.util.List;
 

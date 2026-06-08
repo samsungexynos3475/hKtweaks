@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.server;
+package com.lavenly.hK3475.utils.server;
 
 import org.json.JSONObject;
 

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.fragments.tools.customcontrols;
+package com.lavenly.hK3475.fragments.tools.customcontrols;
 
 import android.Manifest;
 import android.content.Intent;
@@ -30,26 +30,26 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.FilePickerActivity;
-import com.hades.hKtweaks.activities.tools.CustomControlsActivity;
-import com.hades.hKtweaks.database.tools.customcontrols.Controls;
-import com.hades.hKtweaks.database.tools.customcontrols.ExportControl;
-import com.hades.hKtweaks.database.tools.customcontrols.ImportControl;
-import com.hades.hKtweaks.fragments.DescriptionFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.tools.customcontrols.CustomControlException;
-import com.hades.hKtweaks.utils.tools.customcontrols.Items;
-import com.hades.hKtweaks.utils.tools.customcontrols.Values;
-import com.hades.hKtweaks.views.dialog.Dialog;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.GenericSelectView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.SeekBarView;
-import com.hades.hKtweaks.views.recyclerview.SwitchView;
-import com.hades.hKtweaks.views.recyclerview.customcontrols.ErrorView;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.FilePickerActivity;
+import com.lavenly.hK3475.activities.tools.CustomControlsActivity;
+import com.lavenly.hK3475.database.tools.customcontrols.Controls;
+import com.lavenly.hK3475.database.tools.customcontrols.ExportControl;
+import com.lavenly.hK3475.database.tools.customcontrols.ImportControl;
+import com.lavenly.hK3475.fragments.DescriptionFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.tools.customcontrols.CustomControlException;
+import com.lavenly.hK3475.utils.tools.customcontrols.Items;
+import com.lavenly.hK3475.utils.tools.customcontrols.Values;
+import com.lavenly.hK3475.views.dialog.Dialog;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.GenericSelectView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.SeekBarView;
+import com.lavenly.hK3475.views.recyclerview.SwitchView;
+import com.lavenly.hK3475.views.recyclerview.customcontrols.ErrorView;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

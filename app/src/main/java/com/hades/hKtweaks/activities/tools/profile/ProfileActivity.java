@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities.tools.profile;
+package com.lavenly.hK3475.activities.tools.profile;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -37,16 +37,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.BaseActivity;
-import com.hades.hKtweaks.activities.NavigationActivity;
-import com.hades.hKtweaks.database.Settings;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.fragments.BaseFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
-import com.hades.hKtweaks.utils.root.Control;
-import com.hades.hKtweaks.views.dialog.Dialog;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.BaseActivity;
+import com.lavenly.hK3475.activities.NavigationActivity;
+import com.lavenly.hK3475.database.Settings;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.fragments.BaseFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
+import com.lavenly.hK3475.utils.root.Control;
+import com.lavenly.hK3475.views.dialog.Dialog;
 
 import java.util.ArrayList;
 import java.util.Collections;

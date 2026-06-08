@@ -17,21 +17,21 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.kernel.cpu;
+package com.lavenly.hK3475.utils.kernel.cpu;
 
 import android.content.Context;
 import android.os.Build;
 import android.util.SparseArray;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Device;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.CoreCtl;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.MPDecision;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.QcomBcl;
-import com.hades.hKtweaks.utils.root.Control;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.CoreCtl;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.MPDecision;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.QcomBcl;
+import com.lavenly.hK3475.utils.root.Control;
 
 import org.json.JSONArray;
 import org.json.JSONException;

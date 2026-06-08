@@ -1,11 +1,11 @@
-package com.hades.hKtweaks.utils.kernel.spectrum;
+package com.lavenly.hK3475.utils.kernel.spectrum;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 /**
  * Created by Morogoku on 28/07/2017.

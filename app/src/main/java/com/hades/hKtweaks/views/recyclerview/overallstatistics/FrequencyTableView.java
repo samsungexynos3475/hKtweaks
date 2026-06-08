@@ -17,15 +17,15 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview.overallstatistics;
+package com.lavenly.hK3475.views.recyclerview.overallstatistics;
 
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
 
 /**
  * Created by willi on 29.04.16.

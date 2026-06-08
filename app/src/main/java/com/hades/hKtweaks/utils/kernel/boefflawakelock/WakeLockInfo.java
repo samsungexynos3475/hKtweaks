@@ -1,4 +1,4 @@
-package com.hades.hKtweaks.utils.kernel.boefflawakelock;
+package com.lavenly.hK3475.utils.kernel.boefflawakelock;
 
 public class WakeLockInfo {
 

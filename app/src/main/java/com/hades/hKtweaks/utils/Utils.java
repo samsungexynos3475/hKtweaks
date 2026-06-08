@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils;
+package com.lavenly.hK3475.utils;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -45,12 +45,12 @@ import android.view.Display;
 import android.view.View;
 import android.widget.Toast;
 
-import com.hades.hKtweaks.BuildConfig;
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.StartActivity;
-import com.hades.hKtweaks.activities.StartActivityMaterial;
-import com.hades.hKtweaks.utils.root.RootFile;
-import com.hades.hKtweaks.utils.root.RootUtils;
+import com.lavenly.hK3475.BuildConfig;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.StartActivity;
+import com.lavenly.hK3475.activities.StartActivityMaterial;
+import com.lavenly.hK3475.utils.root.RootFile;
+import com.lavenly.hK3475.utils.root.RootUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -259,7 +259,7 @@ public class Utils {
     }
 
     public static String getInternalDataStorage() {
-        return Environment.getExternalStorageDirectory().toString() + "/hKtweaks";
+        return Environment.getExternalStorageDirectory().toString() + "/hK3475";
     }
 
     // MD5 code from

@@ -4,7 +4,7 @@ android {
     compileSdk 31
     buildToolsVersion '30.0.3'
     defaultConfig {
-        applicationId 'com.hades.hKtweaks'
+        applicationId 'com.lavenly.hK3475'
         minSdk 29
         targetSdk 31
         versionCode 223
@@ -27,10 +27,10 @@ android {
     lint {
         abortOnError false
     }
-    namespace 'com.hades.hKtweaks'
+    namespace 'com.lavenly.hK3475'
     android.applicationVariants.all { final variant ->
         variant.outputs.all {
-            outputFileName = "hKtweaks_v${variant.versionName}.apk"
+            outputFileName = "hK3475_v${variant.versionName}.apk"
         }
     }
 }

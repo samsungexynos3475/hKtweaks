@@ -1,4 +1,4 @@
-package com.hades.hKtweaks.utils;
+package com.lavenly.hK3475.utils;
 
 /**
  * Created by willi on 27.11.17.

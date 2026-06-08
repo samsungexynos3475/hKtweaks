@@ -17,11 +17,11 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.server;
+package com.lavenly.hK3475.utils.server;
 
 import android.app.Activity;
 
-import com.hades.hKtweaks.utils.WebpageReader;
+import com.lavenly.hK3475.utils.WebpageReader;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
@@ -26,7 +26,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import android.text.method.MovementMethod;
 import android.view.View;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 /**
  * Created by willi on 17.04.16.

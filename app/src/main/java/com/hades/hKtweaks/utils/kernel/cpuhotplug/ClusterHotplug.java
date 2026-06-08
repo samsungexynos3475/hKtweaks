@@ -19,13 +19,13 @@
  *
  * Hotplug support added by @nalas XDA - ThundeRStormS Team | 2019-07-10
  */
-package com.hades.hKtweaks.utils.kernel.cpuhotplug;
+package com.lavenly.hK3475.utils.kernel.cpuhotplug;
 
 import android.content.Context;
 
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.root.Control;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.root.Control;
 
 /**
  * Created by willi on 09.05.16.

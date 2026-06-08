@@ -1,11 +1,11 @@
-package com.hades.hKtweaks.views.recyclerview;
+package com.lavenly.hK3475.views.recyclerview;
 
 import androidx.appcompat.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-import com.hades.hKtweaks.R;
+import com.lavenly.hK3475.R;
 
 import java.util.ArrayList;
 import java.util.List;

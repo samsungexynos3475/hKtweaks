@@ -17,19 +17,19 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities.tools.profile;
+package com.lavenly.hK3475.activities.tools.profile;
 
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.hades.hKtweaks.BuildConfig;
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.activities.BaseActivity;
-import com.hades.hKtweaks.database.tools.profiles.Profiles;
-import com.hades.hKtweaks.fragments.tools.ProfileFragment;
-import com.hades.hKtweaks.services.profile.Tasker;
+import com.lavenly.hK3475.BuildConfig;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.activities.BaseActivity;
+import com.lavenly.hK3475.database.tools.profiles.Profiles;
+import com.lavenly.hK3475.fragments.tools.ProfileFragment;
+import com.lavenly.hK3475.services.profile.Tasker;
 
 import java.util.List;
 

@@ -17,11 +17,11 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.tools;
+package com.lavenly.hK3475.utils.tools;
 
 import android.os.Environment;
 
-import com.hades.hKtweaks.utils.Utils;
+import com.lavenly.hK3475.utils.Utils;
 
 import java.io.File;
 import java.util.ArrayList;

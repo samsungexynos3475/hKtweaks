@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.activities;
+package com.lavenly.hK3475.activities;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -34,11 +34,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.AppSettings;
-import com.hades.hKtweaks.utils.Themes;
-import com.hades.hKtweaks.utils.Utils;
-import com.hades.hKtweaks.utils.ViewUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.Themes;
+import com.lavenly.hK3475.utils.Utils;
+import com.lavenly.hK3475.utils.ViewUtils;
 
 import java.util.Locale;
 

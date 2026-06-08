@@ -18,34 +18,34 @@
  *
  */
  
-package com.hades.hKtweaks.fragments.kernel;
+package com.lavenly.hK3475.fragments.kernel;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.fragments.ApplyOnBootFragment;
-import com.hades.hKtweaks.fragments.recyclerview.RecyclerViewFragment;
-import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.AiOHotplug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.AlucardHotplug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.AutoSmp;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.BluPlug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.CoreCtl;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.ClusterHotplug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.IntelliPlug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.LazyPlug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.MBHotplug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.MPDecision;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.MSMHotplug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.MakoHotplug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.SamsungPlug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.ThunderPlug;
-import com.hades.hKtweaks.utils.kernel.cpuhotplug.ZenDecision;
-import com.hades.hKtweaks.views.recyclerview.CardView;
-import com.hades.hKtweaks.views.recyclerview.DescriptionView;
-import com.hades.hKtweaks.views.recyclerview.RecyclerViewItem;
-import com.hades.hKtweaks.views.recyclerview.SeekBarView;
-import com.hades.hKtweaks.views.recyclerview.SelectView;
-import com.hades.hKtweaks.views.recyclerview.SwitchView;
-import com.hades.hKtweaks.utils.Utils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
+import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
+import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.AiOHotplug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.AlucardHotplug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.AutoSmp;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.BluPlug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.CoreCtl;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.ClusterHotplug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.IntelliPlug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.LazyPlug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.MBHotplug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.MPDecision;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.MSMHotplug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.MakoHotplug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.SamsungPlug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.ThunderPlug;
+import com.lavenly.hK3475.utils.kernel.cpuhotplug.ZenDecision;
+import com.lavenly.hK3475.views.recyclerview.CardView;
+import com.lavenly.hK3475.views.recyclerview.DescriptionView;
+import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
+import com.lavenly.hK3475.views.recyclerview.SeekBarView;
+import com.lavenly.hK3475.views.recyclerview.SelectView;
+import com.lavenly.hK3475.views.recyclerview.SwitchView;
+import com.lavenly.hK3475.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

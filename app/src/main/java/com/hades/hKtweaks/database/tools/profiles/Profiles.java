@@ -17,11 +17,11 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.database.tools.profiles;
+package com.lavenly.hK3475.database.tools.profiles;
 
 import android.content.Context;
 
-import com.hades.hKtweaks.database.Provider;
+import com.lavenly.hK3475.database.Provider;
 
 import org.json.JSONArray;
 import org.json.JSONException;

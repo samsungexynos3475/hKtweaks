@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views.dialog;
+package com.lavenly.hK3475.views.dialog;
 
 import android.app.AlertDialog;
 import android.content.Context;

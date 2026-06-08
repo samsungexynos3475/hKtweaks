@@ -17,7 +17,7 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.views;
+package com.lavenly.hK3475.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,8 +30,8 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-import com.hades.hKtweaks.R;
-import com.hades.hKtweaks.utils.ViewUtils;
+import com.lavenly.hK3475.R;
+import com.lavenly.hK3475.utils.ViewUtils;
 
 public class BorderCircleView extends FrameLayout {
 

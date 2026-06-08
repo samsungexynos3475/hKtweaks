@@ -17,10 +17,10 @@
  * along with Kernel Adiutor.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.hades.hKtweaks.utils.root;
+package com.lavenly.hK3475.utils.root;
 
-import com.hades.hKtweaks.utils.Log;
-import com.hades.hKtweaks.utils.Utils;
+import com.lavenly.hK3475.utils.Log;
+import com.lavenly.hK3475.utils.Utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

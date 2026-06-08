@@ -1,6 +1,6 @@
-# hKtweaks
+# hK3475
 
-hKtweaks is a fork of MoroGoku's [MTweaks](https://github.com/morogoku/MTweaks-KernelAdiutorMOD), adapted to be used on many Samsung Exynos soc based devices.
+hK3475 is a fork of ExtremeXT hKtweaks's [hKtweaks](https://github.com/ExtremeXT/hKtweaks), adapted to be used on Samsung Exynos 3475 soc based devices.
 
 Thanks to Willi Ye for this great application.
 
@@ -46,17 +46,18 @@ _(Many sys interface paths has been taken from his [UKM-Project](https://github.
     Copyright (C) 2017 morogoku <morogoku@hotmail.com>
     Copyright (C) 2019-2020 corsicanu <corsicanu22@gmail.com>
     Copyright (C) 2024 ExtremeXT <75576145+ExtremeXT@users.noreply.github.com>
+    Copyright (C) 2026 lavenly <135024283+lavenly@users.noreply.github.com>
 	
     
-    hKtweaks is free software: you can redistribute it and/or modify
+    hK3475 is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
     
-    hKtweaks is distributed in the hope that it will be useful,
+    hK3475 is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
     
     You should have received a copy of the GNU General Public License
-    along with hKtweaks.  If not, see <http://www.gnu.org/licenses/>.
+    along with hK3475.  If not, see <http://www.gnu.org/licenses/>.
