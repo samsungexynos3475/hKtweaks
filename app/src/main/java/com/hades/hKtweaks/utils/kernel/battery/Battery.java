@@ -64,6 +64,8 @@ public class Battery {
     private static String CHARGE_SOURCE;
     private static String HEALTH;
     private static String FG_FULLCAPNOM;
+    private static String STORE_MODE;
+    private static String DISABLE_CHARGING;
 	
     public static void setValues() {
         for (String file : new String[] {
@@ -71,6 +73,8 @@ public class Battery {
                 // TODO: Make sys nodes of battery device be auto detected as on gpu/cpu temps
                 "/sys/devices/battery",
                 "/sys/devices/battery.30",
+                "/sys/devices/battery.32",
+                "/sys/devices/battery.52",
                 "/sys/devices/battery.53",
                 "/sys/devices/battery.54",
                 "/sys/devices/battery.55",
@@ -96,6 +100,8 @@ public class Battery {
                 CHARGE_SOURCE = BATTERY_NODE + "/power_supply/battery/batt_charging_source";
                 HEALTH = BATTERY_NODE + "/power_supply/battery/health";
                 FG_FULLCAPNOM = BATTERY_NODE + "/power_supply/battery/fg_fullcapnom";
+                STORE_MODE = BATTERY_NODE + "/power_supply/battery/store_mode";
+                DISABLE_CHARGING = BATTERY_NODE + "/power_supply/battery/charging_enabled";
                 break;
             }
         }
@@ -107,10 +113,8 @@ public class Battery {
     private static final String CHARGE_RATE = "/sys/kernel/thundercharge_control";
     private static final String CHARGE_RATE_ENABLE = CHARGE_RATE + "/enabled";
     private static final String CUSTOM_CURRENT = CHARGE_RATE + "/custom_current";
-    private static final String STORE_MODE = "/sys/devices/battery/power_supply/battery/store_mode";
     private static final String STORE_MODE_MAX = "/sys/module/sec_battery/parameters/store_mode_max";
     private static final String STORE_MODE_MIN = "/sys/module/sec_battery/parameters/store_mode_min";
-    private static final String DISABLE_CHARGING = "/sys/devices/platform/battery/power_supply/battery/charging_enabled";
 
     private Battery(Context context) {
         if (BATTERY_NODE == null) {
