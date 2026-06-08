@@ -66,6 +66,14 @@ public class Themes {
     private static final String DEFAULT_THEME_AMOLED = "defaultPrimary;blueAccentAmoled";
 
     public static boolean isDarkTheme(Context context) {
+        if (context != null && !Prefs.contains(DARK_THEME_PREF_KEY, context)) {
+            boolean isSystemDark = false;
+            if (context.getResources() != null && context.getResources().getConfiguration() != null) {
+                int currentNightMode = context.getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+                isSystemDark = currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES;
+            }
+            Prefs.saveBoolean(DARK_THEME_PREF_KEY, isSystemDark, context);
+        }
         return Prefs.getBoolean(DARK_THEME_PREF_KEY, false, context);
     }
 

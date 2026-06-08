@@ -27,6 +27,10 @@ import android.preference.PreferenceManager;
  */
 class Prefs {
 
+    static boolean contains(String name, Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context).contains(name);
+    }
+
     static void remove(String name, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().remove(name).apply();
     }
