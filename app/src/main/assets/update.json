@@ -1,9 +1,13 @@
 {
-  "latestVersion": "2.2.3",
-  "latestVersionCode": "223",
-  "url": "https://github.com/ExtremeXT/hK3475/releases/download/v2.2.3/hK3475_v2.2.3.apk",
+  "latestVersion": "2.2.4",
+  "latestVersionCode": "224",
+  "url": "https://github.com/samsungexynos3475/hK3475/releases/download/v2.2.4/hK3475_v2.4.4.apk",
   "releaseNotes": [
     "Changelog:",
-    "Implement Disable Charging function, fix TCP congestion algorithm detection - ExtremeXT"
+    "- Rebranded to hK3475",
+    "- Support Exynos 3475 CPU, GPU, INT, and MIF voltage control",
+    "- Support Exynos 3475 store mode MAX & MIN control",
+    "- Support Exynos 3475 disable charging",
+    "By lavenly"
   ]
 }
