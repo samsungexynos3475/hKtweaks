@@ -19,7 +19,7 @@
  */
 package com.lavenly.hK3475.views.recyclerview;
 
-import androidx.appcompat.widget.AppCompatTextView;
+import com.google.android.material.textview.MaterialTextView;
 import android.view.View;
 
 import com.lavenly.hK3475.R;
@@ -29,7 +29,7 @@ import com.lavenly.hK3475.R;
  */
 public class TitleView extends RecyclerViewItem {
 
-    private AppCompatTextView mTitle;
+    private MaterialTextView mTitle;
 
     private CharSequence mTitleText;
 

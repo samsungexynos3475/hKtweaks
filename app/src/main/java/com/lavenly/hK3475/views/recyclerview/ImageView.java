@@ -1,7 +1,7 @@
 package com.lavenly.hK3475.views.recyclerview;
 
 import android.graphics.drawable.Drawable;
-import androidx.appcompat.widget.AppCompatImageView;
+import com.google.android.material.imageview.ShapeableImageView;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -13,7 +13,7 @@ import com.lavenly.hK3475.R;
 public class ImageView extends RecyclerViewItem {
 
     private View mRootView;
-    private AppCompatImageView mImageView;
+    private ShapeableImageView mImageView;
     private LinearLayout mLayoutView;
 
     private LinearLayout.LayoutParams mLp;

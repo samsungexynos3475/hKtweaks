@@ -19,7 +19,7 @@
  */
 package com.lavenly.hK3475.views.recyclerview;
 
-import androidx.appcompat.widget.AppCompatEditText;
+import com.google.android.material.textfield.TextInputEditText;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -33,7 +33,7 @@ import com.lavenly.hK3475.R;
 public class EditTextView extends RecyclerViewItem {
 
     private TextView mTextView;
-    private AppCompatEditText mEditTextView;
+    private TextInputEditText mEditTextView;
 
     private CharSequence mTitleText;
     private CharSequence mHintText;

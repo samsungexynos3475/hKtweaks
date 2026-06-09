@@ -1,7 +1,7 @@
 package com.lavenly.hK3475.views.recyclerview;
 
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatTextView;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textview.MaterialTextView;
 import android.view.View;
 
 import com.lavenly.hK3475.R;
@@ -12,9 +12,9 @@ import com.lavenly.hK3475.R;
 
 public class ButtonView2 extends RecyclerViewItem {
 
-    private AppCompatButton mButton;
-    private AppCompatTextView mTitle;
-    private AppCompatTextView mSummary;
+    private MaterialButton mButton;
+    private MaterialTextView mTitle;
+    private MaterialTextView mSummary;
 
     private CharSequence mTitleText;
     private CharSequence mSummaryText;

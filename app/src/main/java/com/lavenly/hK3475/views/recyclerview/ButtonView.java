@@ -19,7 +19,7 @@
  */
 package com.lavenly.hK3475.views.recyclerview;
 
-import androidx.appcompat.widget.AppCompatButton;
+import com.google.android.material.button.MaterialButton;
 import android.view.View;
 
 import com.lavenly.hK3475.R;
@@ -30,7 +30,7 @@ import com.lavenly.hK3475.R;
 
 public class ButtonView extends RecyclerViewItem {
 
-    private AppCompatButton mButton;
+    private MaterialButton mButton;
 
     private String mText;
     private View.OnClickListener mOnClickListener;

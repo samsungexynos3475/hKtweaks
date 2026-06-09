@@ -1,8 +1,8 @@
 package com.lavenly.hK3475.views.recyclerview;
 
-import androidx.appcompat.widget.AppCompatTextView;
+import com.google.android.material.textview.MaterialTextView;
 import android.view.View;
-import android.widget.CheckBox;
+import com.google.android.material.checkbox.MaterialCheckBox;
 import android.widget.CompoundButton;
 
 import com.lavenly.hK3475.R;
@@ -20,9 +20,9 @@ public class CheckBoxView extends RecyclerViewItem {
         void onChanged(CheckBoxView checkboxView, boolean isChecked);
     }
 
-    private AppCompatTextView mTitle;
-    private AppCompatTextView mSummary;
-    private CheckBox mCheckbox;
+    private MaterialTextView mTitle;
+    private MaterialTextView mSummary;
+    private MaterialCheckBox mCheckbox;
 
     private CharSequence mTitleText;
     private CharSequence mSummaryText;

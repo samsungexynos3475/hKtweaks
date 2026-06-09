@@ -20,9 +20,9 @@
 package com.lavenly.hK3475.views.recyclerview.overallstatistics;
 
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.lavenly.hK3475.R;
 import com.lavenly.hK3475.utils.Utils;
 import com.lavenly.hK3475.views.recyclerview.RecyclerViewItem;
@@ -35,7 +35,7 @@ public class FrequencyTableView extends RecyclerViewItem {
     private TextView mFrequency;
     private TextView mPercentage;
     private TextView mDuration;
-    private ProgressBar mProgress;
+    private LinearProgressIndicator mProgress;
 
     private CharSequence mFreqText;
     private CharSequence mDurationText;
@@ -82,7 +82,7 @@ public class FrequencyTableView extends RecyclerViewItem {
         }
         if (mUsage > -1 && mPercentage != null && mProgress != null) {
             mPercentage.setText(Utils.strFormat("%d%%", mUsage));
-            mProgress.setProgress(mUsage);
+            mProgress.setProgressCompat(mUsage, true);
         }
     }
 }

@@ -38,7 +38,6 @@ import android.provider.MediaStore;
 import android.provider.Settings;
 import androidx.annotation.StringRes;
 import androidx.core.view.ViewCompat;
-import androidx.appcompat.app.AlertDialog;
 import android.text.Html;
 import android.util.Base64;
 import android.view.Display;
@@ -51,6 +50,7 @@ import com.lavenly.hK3475.activities.StartActivity;
 import com.lavenly.hK3475.activities.StartActivityMaterial;
 import com.lavenly.hK3475.utils.root.RootFile;
 import com.lavenly.hK3475.utils.root.RootUtils;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -101,7 +101,7 @@ public class Utils {
         } catch (JSONException ignored) {
             Log.e("Can't read changelog, no release information provided");
         }
-        AlertDialog.Builder alert = new AlertDialog.Builder(context);
+        MaterialAlertDialogBuilder alert = new MaterialAlertDialogBuilder(context);
         alert.setTitle(String.format(context.getString(R.string.changelog), versionName ));
         alert.setMessage(changelog.toString());
         alert.setPositiveButton(context.getString(R.string.close), (dialog, id) -> {
