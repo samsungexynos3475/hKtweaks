@@ -521,6 +521,9 @@ public class Utils {
     }
 
     public static boolean existFile(String file) {
+        if (new File(file).exists()) {
+            return true;
+        }
         return existFile(file, true);
     }
 

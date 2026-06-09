@@ -20,6 +20,7 @@
 package com.lavenly.hK3475.utils.kernel.bus;
 
 import android.content.Context;
+import java.io.File;
 
 import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
 import com.lavenly.hK3475.utils.Utils;
@@ -37,7 +38,22 @@ public class VoltageCam {
 
     public static final String BACKUP = "/data/.hK3475/busCam_stock_voltage";
 
-    public static final String VOLTAGE = "/sys/class/devfreq/17000040.devfreq_cam/volt_table";
+    public static final String VOLTAGE = getVoltagePath();
+
+    private static String getVoltagePath() {
+        File devfreqDir = new File("/sys/class/devfreq");
+        if (devfreqDir.exists() && devfreqDir.isDirectory()) {
+            File[] files = devfreqDir.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    if ((file.getName().contains("cam") || file.getName().contains("CAM")) && new File(file, "volt_table").exists()) {
+                        return file.getAbsolutePath() + "/volt_table";
+                    }
+                }
+            }
+        }
+        return "/sys/class/devfreq/17000040.devfreq_cam/volt_table";
+    }
 
     private static final HashMap<String, Boolean> sVoltages = new HashMap<>();
     private static final HashMap<String, Integer> sOffset = new HashMap<>();
@@ -139,7 +155,7 @@ public class VoltageCam {
     public static boolean supported() {
         if (PATH != null) return true;
         for (String path : sVoltages.keySet()) {
-            if (Utils.existFile(path)) {
+            if (new File(path).exists() || Utils.existFile(path)) {
                 PATH = path;
             }
         }

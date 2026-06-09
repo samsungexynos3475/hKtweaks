@@ -20,6 +20,7 @@
 package com.lavenly.hK3475.utils.kernel.gpu;
 
 import android.content.Context;
+import java.io.File;
 
 import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
 import com.lavenly.hK3475.utils.Utils;
@@ -42,40 +43,31 @@ public class GPUFreqTmu {
         return sIOInstance;
     }
 
-    private static final String TMU_7885 = "/sys/devices/platform/11500000.mali/tmu";
-    private static final String THROTTLING1_7885 = "/sys/devices/platform/11500000.mali/throttling1";
-    private static final String THROTTLING2_7885 = "/sys/devices/platform/11500000.mali/throttling2";
-    private static final String THROTTLING3_7885 = "/sys/devices/platform/11500000.mali/throttling3";
-    private static final String THROTTLING4_7885 = "/sys/devices/platform/11500000.mali/throttling4";
-    private static final String TRIPPING_7885 = "/sys/devices/platform/11500000.mali/tripping";
+    private static final String MALI_PATH = getMaliPath();
 
-    private static final String TMU_78x0 = "/sys/devices/11400000.mali/tmu";
-    private static final String THROTTLING1_78x0 = "/sys/devices/11400000.mali/throttling1";
-    private static final String THROTTLING2_78x0 = "/sys/devices/11400000.mali/throttling2";
-    private static final String THROTTLING3_78x0 = "/sys/devices/11400000.mali/throttling3";
-    private static final String THROTTLING4_78x0 = "/sys/devices/11400000.mali/throttling4";
-    private static final String TRIPPING_78x0 = "/sys/devices/11400000.mali/tripping";
+    private static String getMaliPath() {
+        for (String parent : new String[]{"/sys/devices", "/sys/devices/platform"}) {
+            File parentDir = new File(parent);
+            if (parentDir.exists() && parentDir.isDirectory()) {
+                File[] files = parentDir.listFiles();
+                if (files != null) {
+                    for (File file : files) {
+                        if (file.getName().endsWith(".mali") && file.isDirectory()) {
+                            return file.getAbsolutePath();
+                        }
+                    }
+                }
+            }
+        }
+        return "/sys/devices/11400000.mali";
+    }
 
-    private static final String TMU_S7 = "/sys/devices/14ac0000.mali/tmu";
-    private static final String THROTTLING1_S7 = "/sys/devices/14ac0000.mali/throttling1";
-    private static final String THROTTLING2_S7 = "/sys/devices/14ac0000.mali/throttling2";
-    private static final String THROTTLING3_S7 = "/sys/devices/14ac0000.mali/throttling3";
-    private static final String THROTTLING4_S7 = "/sys/devices/14ac0000.mali/throttling4";
-    private static final String TRIPPING_S7 = "/sys/devices/14ac0000.mali/tripping";
-
-    private static final String TMU_S8 = "/sys/devices/platform/13900000.mali/tmu";
-    private static final String THROTTLING1_S8 = "/sys/devices/platform/13900000.mali/throttling1";
-    private static final String THROTTLING2_S8 = "/sys/devices/platform/13900000.mali/throttling2";
-    private static final String THROTTLING3_S8 = "/sys/devices/platform/13900000.mali/throttling3";
-    private static final String THROTTLING4_S8 = "/sys/devices/platform/13900000.mali/throttling4";
-    private static final String TRIPPING_S8 = "/sys/devices/platform/13900000.mali/tripping";
-
-    private static final String TMU_S9 = "/sys/devices/platform/17500000.mali/tmu";
-    private static final String THROTTLING1_S9 = "/sys/devices/platform/17500000.mali/throttling1";
-    private static final String THROTTLING2_S9 = "/sys/devices/platform/17500000.mali/throttling2";
-    private static final String THROTTLING3_S9 = "/sys/devices/platform/17500000.mali/throttling3";
-    private static final String THROTTLING4_S9 = "/sys/devices/platform/17500000.mali/throttling4";
-    private static final String TRIPPING_S9 = "/sys/devices/platform/17500000.mali/tripping";
+    private static final String TMU_78x0 = MALI_PATH + "/tmu";
+    private static final String THROTTLING1_78x0 = MALI_PATH + "/throttling1";
+    private static final String THROTTLING2_78x0 = MALI_PATH + "/throttling2";
+    private static final String THROTTLING3_78x0 = MALI_PATH + "/throttling3";
+    private static final String THROTTLING4_78x0 = MALI_PATH + "/throttling4";
+    private static final String TRIPPING_78x0 = MALI_PATH + "/tripping";
 
     private final List<String> mTmu = new ArrayList<>();
     private final List<String> mThrottling1 = new ArrayList<>();
@@ -86,41 +78,17 @@ public class GPUFreqTmu {
 
 
     {
-        mTmu.add(TMU_7885);
         mTmu.add(TMU_78x0);
-        mTmu.add(TMU_S7);
-        mTmu.add(TMU_S8);
-        mTmu.add(TMU_S9);
 
-        mThrottling1.add(THROTTLING1_7885);
         mThrottling1.add(THROTTLING1_78x0);
-        mThrottling1.add(THROTTLING1_S7);
-        mThrottling1.add(THROTTLING1_S8);
-        mThrottling1.add(THROTTLING1_S9);
 
-        mThrottling2.add(THROTTLING2_7885);
         mThrottling2.add(THROTTLING2_78x0);
-        mThrottling2.add(THROTTLING2_S7);
-        mThrottling2.add(THROTTLING2_S8);
-        mThrottling2.add(THROTTLING2_S9);
 
-        mThrottling3.add(THROTTLING3_7885);
         mThrottling3.add(THROTTLING3_78x0);
-        mThrottling3.add(THROTTLING3_S7);
-        mThrottling3.add(THROTTLING3_S8);
-        mThrottling3.add(THROTTLING3_S9);
 
-        mThrottling4.add(THROTTLING4_7885);
         mThrottling4.add(THROTTLING4_78x0);
-        mThrottling4.add(THROTTLING4_S7);
-        mThrottling4.add(THROTTLING4_S8);
-        mThrottling4.add(THROTTLING4_S9);
 
-        mTripping.add(TRIPPING_7885);
         mTripping.add(TRIPPING_78x0);
-        mTripping.add(TRIPPING_S7);
-        mTripping.add(TRIPPING_S8);
-        mTripping.add(TRIPPING_S9);
     }
 
     private String TMU;

@@ -28,6 +28,7 @@ import com.lavenly.hK3475.utils.AppSettings;
 import com.lavenly.hK3475.utils.Utils;
 import com.lavenly.hK3475.utils.root.Control;
 
+import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
@@ -68,42 +69,71 @@ public class Battery {
     private static String DISABLE_CHARGING;
 	
     public static void setValues() {
-        for (String file : new String[] {
-                // Add on this list needed values for battery sysfs nodes
-                // TODO: Make sys nodes of battery device be auto detected as on gpu/cpu temps
-                "/sys/devices/battery",
-                "/sys/devices/battery.30",
-                "/sys/devices/battery.32",
-                "/sys/devices/battery.52",
-                "/sys/devices/battery.53",
-                "/sys/devices/battery.54",
-                "/sys/devices/battery.55",
-                "/sys/devices/platform/battery",
-                "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery",
-                "/sys/devices/platform/soc/soc:battery"}
-                ) {
-            if (Utils.existFile(file)) {
-                BATTERY_NODE = file;
-                UNSTABLE_CHARGE = BATTERY_NODE + "/unstable_power_detection";
-                HV_INPUT = BATTERY_NODE + "/hv_input";
-                HV_CHARGE = BATTERY_NODE + "/hv_charge";
-                AC_INPUT = BATTERY_NODE + "/ac_input";
-                AC_CHARGE = BATTERY_NODE + "/ac_charge";
-                AC_INPUT_SCREEN = BATTERY_NODE + "/so_limit_input";
-                AC_CHARGE_SCREEN = BATTERY_NODE + "/so_limit_charge";
-                USB_INPUT = BATTERY_NODE + "/sdp_input";
-                USB_CHARGE = BATTERY_NODE + "/sdp_charge";
-                WC_INPUT = BATTERY_NODE + "/wc_input";
-                WC_CHARGE = BATTERY_NODE + "/wc_charge";
-                CAR_INPUT = BATTERY_NODE + "/car_input";
-                CAR_CHARGE = BATTERY_NODE + "/car_charge";
-                CHARGE_SOURCE = BATTERY_NODE + "/power_supply/battery/batt_charging_source";
-                HEALTH = BATTERY_NODE + "/power_supply/battery/health";
-                FG_FULLCAPNOM = BATTERY_NODE + "/power_supply/battery/fg_fullcapnom";
-                STORE_MODE = BATTERY_NODE + "/power_supply/battery/store_mode";
-                DISABLE_CHARGING = BATTERY_NODE + "/power_supply/battery/charging_enabled";
-                break;
+        File powerSupplyBattery = new File("/sys/class/power_supply/battery");
+        if (powerSupplyBattery.exists()) {
+            try {
+                File realBatterySupplyDir = powerSupplyBattery.getCanonicalFile();
+                if (realBatterySupplyDir != null) {
+                    File powerSupplyDir = realBatterySupplyDir.getParentFile();
+                    if (powerSupplyDir != null) {
+                        File batteryNode = powerSupplyDir.getParentFile();
+                        if (batteryNode != null && batteryNode.exists()) {
+                            if (new File(batteryNode, "power_supply/battery").exists()) {
+                                BATTERY_NODE = batteryNode.getAbsolutePath();
+                            }
+                        }
+                    }
+                }
+            } catch (Exception ignored) {}
+        }
+
+        if (BATTERY_NODE == null) {
+            File devicesDir = new File("/sys/devices");
+            if (devicesDir.exists() && devicesDir.isDirectory()) {
+                File[] files = devicesDir.listFiles();
+                if (files != null) {
+                    for (File file : files) {
+                        if (file.getName().startsWith("battery") && file.isDirectory() && new File(file, "power_supply/battery").exists()) {
+                            BATTERY_NODE = file.getAbsolutePath();
+                            break;
+                        }
+                    }
+                }
             }
+        }
+
+        if (BATTERY_NODE == null) {
+            for (String file : new String[] {
+                    "/sys/devices/battery",
+                    "/sys/devices/battery.30",
+                    "/sys/devices/battery.32"}
+                    ) {
+                if (new File(file).exists() || Utils.existFile(file)) {
+                    BATTERY_NODE = file;
+                    break;
+                }
+            }
+        }
+
+        if (BATTERY_NODE != null) {
+            UNSTABLE_CHARGE = BATTERY_NODE + "/unstable_power_detection";
+            HV_INPUT = BATTERY_NODE + "/hv_input";
+            HV_CHARGE = BATTERY_NODE + "/hv_charge";
+            AC_INPUT = BATTERY_NODE + "/ac_input";
+            AC_CHARGE = BATTERY_NODE + "/ac_charge";
+            AC_INPUT_SCREEN = BATTERY_NODE + "/so_limit_input";
+            AC_CHARGE_SCREEN = BATTERY_NODE + "/so_limit_charge";
+            USB_INPUT = BATTERY_NODE + "/sdp_input";
+            USB_CHARGE = BATTERY_NODE + "/sdp_charge";
+            WC_INPUT = BATTERY_NODE + "/wc_input";
+            WC_CHARGE = BATTERY_NODE + "/wc_charge";
+            CAR_INPUT = BATTERY_NODE + "/car_input";
+            CAR_CHARGE = BATTERY_NODE + "/car_charge";
+            CHARGE_SOURCE = BATTERY_NODE + "/power_supply/battery/batt_charging_source";
+            HEALTH = BATTERY_NODE + "/power_supply/battery/health";
+            FG_FULLCAPNOM = BATTERY_NODE + "/power_supply/battery/fg_fullcapnom";
+            STORE_MODE = BATTERY_NODE + "/power_supply/battery/store_mode";
+            DISABLE_CHARGING = BATTERY_NODE + "/power_supply/battery/charging_enabled";
         }
     }
 

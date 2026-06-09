@@ -20,6 +20,7 @@
 package com.lavenly.hK3475.utils.kernel.gpu;
 
 import android.content.Context;
+import java.io.File;
 
 import com.lavenly.hK3475.R;
 import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
@@ -53,76 +54,35 @@ public class GPUFreqExynos {
     private static final String AVAILABLE_FREQS_STOCK = "/sys/kernel/gpu/gpu_freq_table";
     private static final String DRIVER_VERSION = "/sys/module/mali_kbase/version";
 
-    private static final String MAX_S7_FREQ_STOCK = "/sys/devices/platform/gpusysfs/gpu_max_clock";
-    private static final String MIN_S7_FREQ_STOCK = "/sys/devices/platform/gpusysfs/gpu_min_clock";
-    private static final String AVAILABLE_S7_FREQS_STOCK = "/sys/devices/platform/gpusysfs/gpu_freq_table";
+    private static final String MALI_PATH = getMaliPath();
 
-    private static final String MAX_7885_FREQ = "/sys/devices/platform/11500000.mali/max_clock";
-    private static final String MIN_7885_FREQ = "/sys/devices/platform/11500000.mali/min_clock";
-    private static final String CUR_7885_FREQ = "/sys/devices/platform/11500000.mali/clock";
-    private static final String AVAILABLE_7885_FREQS = "/sys/devices/platform/11500000.mali/volt_table";
-    private static final String AVAILABLE_7885_GOVERNORS = "/sys/devices/platform/11500000.mali/dvfs_governor";
-    private static final String TUNABLE_HIGHSPEED_7885_CLOCK = "/sys/devices/platform/11500000.mali/highspeed_clock";
-    private static final String TUNABLE_HIGHSPEED_7885_LOAD = "/sys/devices/platform/11500000.mali/highspeed_load";
-    private static final String TUNABLE_HIGHSPEED_7885_DELAY = "/sys/devices/platform/11500000.mali/highspeed_delay";
-    private static final String POWER_POLICY_7885 = "/sys/devices/platform/11500000.mali/power_policy";
-    private static final String USAGE_7885 = "/sys/devices/platform/11500000.mali/utilization";
+    private static String getMaliPath() {
+        for (String parent : new String[]{"/sys/devices", "/sys/devices/platform"}) {
+            File parentDir = new File(parent);
+            if (parentDir.exists() && parentDir.isDirectory()) {
+                File[] files = parentDir.listFiles();
+                if (files != null) {
+                    for (File file : files) {
+                        if (file.getName().endsWith(".mali") && file.isDirectory()) {
+                            return file.getAbsolutePath();
+                        }
+                    }
+                }
+            }
+        }
+        return "/sys/devices/11400000.mali";
+    }
 
-    private static final String MAX_78x0_FREQ = "/sys/devices/11400000.mali/max_clock";
-    private static final String MIN_78x0_FREQ = "/sys/devices/11400000.mali/min_clock";
-    private static final String CUR_78x0_FREQ = "/sys/devices/11400000.mali/clock";
-    private static final String AVAILABLE_78x0_FREQS = "/sys/devices/11400000.mali/volt_table";
-    private static final String AVAILABLE_78x0_GOVERNORS = "/sys/devices/11400000.mali/dvfs_governor";
-    private static final String TUNABLE_HIGHSPEED_78x0_CLOCK = "/sys/devices/11400000.mali/highspeed_clock";
-    private static final String TUNABLE_HIGHSPEED_78x0_LOAD = "/sys/devices/11400000.mali/highspeed_load";
-    private static final String TUNABLE_HIGHSPEED_78x0_DELAY = "/sys/devices/11400000.mali/highspeed_delay";
-    private static final String POWER_POLICY_78x0 = "/sys/devices/11400000.mali/power_policy";
-    private static final String USAGE_78x0 = "/sys/devices/11400000.mali/utilization";
-
-    private static final String MAX_S7_FREQ = "/sys/devices/14ac0000.mali/max_clock";
-    private static final String MIN_S7_FREQ = "/sys/devices/14ac0000.mali/min_clock";
-    private static final String CUR_S7_FREQ = "/sys/devices/14ac0000.mali/clock";
-    private static final String AVAILABLE_S7_FREQS = "/sys/devices/14ac0000.mali/volt_table";
-    private static final String AVAILABLE_S7_GOVERNORS = "/sys/devices/14ac0000.mali/dvfs_governor";
-    private static final String TUNABLE_HIGHSPEED_S7_CLOCK = "/sys/devices/14ac0000.mali/highspeed_clock";
-    private static final String TUNABLE_HIGHSPEED_S7_LOAD = "/sys/devices/14ac0000.mali/highspeed_load";
-    private static final String TUNABLE_HIGHSPEED_S7_DELAY = "/sys/devices/14ac0000.mali/highspeed_delay";
-    private static final String POWER_POLICY_S7 = "/sys/devices/14ac0000.mali/power_policy";
-    private static final String USAGE_S7 = "/sys/devices/14ac0000.mali/utilization";
-
-    private static final String MAX_S8_FREQ = "/sys/devices/platform/13900000.mali/max_clock";
-    private static final String MIN_S8_FREQ = "/sys/devices/platform/13900000.mali/min_clock";
-    private static final String CUR_S8_FREQ = "/sys/devices/platform/13900000.mali/clock";
-    private static final String AVAILABLE_S8_FREQS = "/sys/devices/platform/13900000.mali/volt_table";
-    private static final String AVAILABLE_S8_GOVERNORS = "/sys/devices/platform/13900000.mali/dvfs_governor";
-    private static final String TUNABLE_HIGHSPEED_S8_CLOCK = "/sys/devices/platform/13900000.mali/highspeed_clock";
-    private static final String TUNABLE_HIGHSPEED_S8_LOAD = "/sys/devices/platform/13900000.mali/highspeed_load";
-    private static final String TUNABLE_HIGHSPEED_S8_DELAY = "/sys/devices/platform/13900000.mali/highspeed_delay";
-    private static final String POWER_POLICY_S8 = "/sys/devices/platform/13900000.mali/power_policy";
-    private static final String USAGE_S8 = "/sys/devices/platform/13900000.mali/utilization";
-
-    private static final String MAX_S9_FREQ = "/sys/devices/platform/17500000.mali/max_clock";
-    private static final String MIN_S9_FREQ = "/sys/devices/platform/17500000.mali/min_clock";
-    private static final String CUR_S9_FREQ = "/sys/devices/platform/17500000.mali/clock";
-    private static final String AVAILABLE_S9_FREQS = "/sys/devices/platform/17500000.mali/volt_table";
-    private static final String AVAILABLE_S9_GOVERNORS = "/sys/devices/platform/17500000.mali/dvfs_governor";
-    private static final String TUNABLE_HIGHSPEED_S9_CLOCK = "/sys/devices/platform/17500000.mali/highspeed_clock";
-    private static final String TUNABLE_HIGHSPEED_S9_LOAD = "/sys/devices/platform/17500000.mali/highspeed_load";
-    private static final String TUNABLE_HIGHSPEED_S9_DELAY = "/sys/devices/platform/17500000.mali/highspeed_delay";
-    private static final String POWER_POLICY_S9 = "/sys/devices/platform/17500000.mali/power_policy";
-    private static final String USAGE_S9 = "/sys/devices/platform/17500000.mali/utilization";
-
-    private static final String MAX_S10_FREQ = "/sys/devices/platform/18500000.mali/max_clock";
-    private static final String MIN_S10_FREQ = "/sys/devices/platform/18500000.mali/min_clock";
-    private static final String CUR_S10_FREQ = "/sys/devices/platform/18500000.mali/clock";
-    private static final String AVAILABLE_S10_FREQS = "/sys/devices/platform/18500000.mali/volt_table";
-    private static final String AVAILABLE_S10_GOVERNORS = "/sys/devices/platform/18500000.mali/dvfs_governor";
-    private static final String TUNABLE_HIGHSPEED_S10_CLOCK = "/sys/devices/platform/18500000.mali/highspeed_clock";
-    private static final String TUNABLE_HIGHSPEED_S10_LOAD = "/sys/devices/platform/18500000.mali/highspeed_load";
-    private static final String TUNABLE_HIGHSPEED_S10_DELAY = "/sys/devices/platform/18500000.mali/highspeed_delay";
-    private static final String POWER_POLICY_S10 = "/sys/devices/platform/18500000.mali/power_policy";
-    private static final String USAGE_S10 = "/sys/devices/platform/18500000.mali/utilization";
-
+    private static final String MAX_78x0_FREQ = MALI_PATH + "/max_clock";
+    private static final String MIN_78x0_FREQ = MALI_PATH + "/min_clock";
+    private static final String CUR_78x0_FREQ = MALI_PATH + "/clock";
+    private static final String AVAILABLE_78x0_FREQS = MALI_PATH + "/volt_table";
+    private static final String AVAILABLE_78x0_GOVERNORS = MALI_PATH + "/dvfs_governor";
+    private static final String TUNABLE_HIGHSPEED_78x0_CLOCK = MALI_PATH + "/highspeed_clock";
+    private static final String TUNABLE_HIGHSPEED_78x0_LOAD = MALI_PATH + "/highspeed_load";
+    private static final String TUNABLE_HIGHSPEED_78x0_DELAY = MALI_PATH + "/highspeed_delay";
+    private static final String POWER_POLICY_78x0 = MALI_PATH + "/power_policy";
+    private static final String USAGE_78x0 = MALI_PATH + "/utilization";
 
     private final HashMap<String, Integer> mAvailableVolts = new HashMap<>();
     private final HashMap<String, Integer> mCurrentFreqs = new HashMap<>();
@@ -137,88 +97,30 @@ public class GPUFreqExynos {
     private final HashMap<String, Integer> mUsage = new HashMap<>();
 
     {
-        mAvailableVolts.put(AVAILABLE_7885_FREQS, 1000);
         mAvailableVolts.put(AVAILABLE_78x0_FREQS, 1000);
-        mAvailableVolts.put(AVAILABLE_S7_FREQS, 1000);
-        mAvailableVolts.put(AVAILABLE_S8_FREQS, 1000);
-        mAvailableVolts.put(AVAILABLE_S9_FREQS, 1000);
-        mAvailableVolts.put(AVAILABLE_S10_FREQS, 1000);
 
-        mCurrentFreqs.put(CUR_7885_FREQ, 1);
         mCurrentFreqs.put(CUR_78x0_FREQ, 1);
-        mCurrentFreqs.put(CUR_S7_FREQ, 1);
-        mCurrentFreqs.put(CUR_S8_FREQ, 1);
-        mCurrentFreqs.put(CUR_S9_FREQ, 1);
-        mCurrentFreqs.put(CUR_S10_FREQ, 1);
 
-        mMaxFreqs.add(MAX_7885_FREQ);
         mMaxFreqs.add(MAX_78x0_FREQ);
-        mMaxFreqs.add(MAX_S7_FREQ);
-        mMaxFreqs.add(MAX_S8_FREQ);
-        mMaxFreqs.add(MAX_S9_FREQ);
-        mMaxFreqs.add(MAX_S10_FREQ);
-        mMaxFreqs.add(MAX_S7_FREQ_STOCK);
         mMaxFreqs.add(MAX_FREQ_STOCK);
 
-        mMinFreqs.add(MIN_7885_FREQ);
         mMinFreqs.add(MIN_78x0_FREQ);
-        mMinFreqs.add(MIN_S7_FREQ);
-        mMinFreqs.add(MIN_S8_FREQ);
-        mMinFreqs.add(MIN_S9_FREQ);
-        mMinFreqs.add(MIN_S10_FREQ);
-        mMinFreqs.add(MIN_S7_FREQ_STOCK);
         mMinFreqs.add(MIN_FREQ_STOCK);
 
-        mAvailableFreqs.add(AVAILABLE_7885_FREQS);
         mAvailableFreqs.add(AVAILABLE_78x0_FREQS);
-        mAvailableFreqs.add(AVAILABLE_S7_FREQS);
-        mAvailableFreqs.add(AVAILABLE_S8_FREQS);
-        mAvailableFreqs.add(AVAILABLE_S9_FREQS);
-        mAvailableFreqs.add(AVAILABLE_S10_FREQS);
-        mAvailableFreqs.add(AVAILABLE_S7_FREQS_STOCK);
         mAvailableFreqs.add(AVAILABLE_FREQS_STOCK);
 
-        mScalingGovernors.add(AVAILABLE_7885_GOVERNORS);
         mScalingGovernors.add(AVAILABLE_78x0_GOVERNORS);
-        mScalingGovernors.add(AVAILABLE_S7_GOVERNORS);
-        mScalingGovernors.add(AVAILABLE_S8_GOVERNORS);
-        mScalingGovernors.add(AVAILABLE_S9_GOVERNORS);
-        mScalingGovernors.add(AVAILABLE_S10_GOVERNORS);
 
-        mTunableHighspeedClocks.put(TUNABLE_HIGHSPEED_7885_CLOCK, 1);
         mTunableHighspeedClocks.put(TUNABLE_HIGHSPEED_78x0_CLOCK, 1);
-        mTunableHighspeedClocks.put(TUNABLE_HIGHSPEED_S7_CLOCK, 1);
-        mTunableHighspeedClocks.put(TUNABLE_HIGHSPEED_S8_CLOCK, 1);
-        mTunableHighspeedClocks.put(TUNABLE_HIGHSPEED_S9_CLOCK, 1);
-        mTunableHighspeedClocks.put(TUNABLE_HIGHSPEED_S10_CLOCK, 1);
 
-        mTunableHighspeedLoads.put(TUNABLE_HIGHSPEED_7885_LOAD, 1);
         mTunableHighspeedLoads.put(TUNABLE_HIGHSPEED_78x0_LOAD, 1);
-        mTunableHighspeedLoads.put(TUNABLE_HIGHSPEED_S7_LOAD, 1);
-        mTunableHighspeedLoads.put(TUNABLE_HIGHSPEED_S8_LOAD, 1);
-        mTunableHighspeedLoads.put(TUNABLE_HIGHSPEED_S9_LOAD, 1);
-        mTunableHighspeedLoads.put(TUNABLE_HIGHSPEED_S10_LOAD, 1);
 
-        mTunableHighspeedDelays.put(TUNABLE_HIGHSPEED_7885_DELAY, 1);
         mTunableHighspeedDelays.put(TUNABLE_HIGHSPEED_78x0_DELAY, 1);
-        mTunableHighspeedDelays.put(TUNABLE_HIGHSPEED_S7_DELAY, 1);
-        mTunableHighspeedDelays.put(TUNABLE_HIGHSPEED_S8_DELAY, 1);
-        mTunableHighspeedDelays.put(TUNABLE_HIGHSPEED_S9_DELAY, 1);
-        mTunableHighspeedDelays.put(TUNABLE_HIGHSPEED_S10_DELAY, 1);
 
-        mPowerPolicies.put(POWER_POLICY_7885, 1);
         mPowerPolicies.put(POWER_POLICY_78x0, 1);
-        mPowerPolicies.put(POWER_POLICY_S7, 1);
-        mPowerPolicies.put(POWER_POLICY_S8, 1);
-        mPowerPolicies.put(POWER_POLICY_S9, 1);
-        mPowerPolicies.put(POWER_POLICY_S10, 1);
 
-        mUsage.put(USAGE_7885, 1);
         mUsage.put(USAGE_78x0, 1);
-        mUsage.put(USAGE_S7, 1);
-        mUsage.put(USAGE_S8, 1);
-        mUsage.put(USAGE_S9, 1);
-        mUsage.put(USAGE_S10, 1);
     }
 
     public String AVAILABLE_VOLTS;
@@ -273,7 +175,7 @@ public class GPUFreqExynos {
 
         for (String file : mAvailableFreqs) {
             if (Utils.existFile(file)) {
-                if ((file.equals(AVAILABLE_S7_FREQS_STOCK)) || (file.equals(AVAILABLE_FREQS_STOCK))){
+                if (file.equals(AVAILABLE_FREQS_STOCK)) {
                     String[] freqs = Utils.readFile(file).split(" ");
                     AVAILABLE_FREQS = new ArrayList<>();
                     AVAILABLE_FREQS_SORT = new ArrayList<>();

@@ -20,6 +20,7 @@
 package com.lavenly.hK3475.utils.kernel.bus;
 
 import android.content.Context;
+import java.io.File;
 
 import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
 import com.lavenly.hK3475.utils.Utils;
@@ -37,7 +38,25 @@ public class VoltageMif {
 
     public static final String BACKUP = "/data/.hK3475/busMif_stock_voltage";
 
-    public static final String VOLTAGE = "/sys/class/devfreq/bus_mif/volt_table";
+    public static final String VOLTAGE = getVoltagePath();
+
+    private static String getVoltagePath() {
+        File devfreqDir = new File("/sys/class/devfreq");
+        if (devfreqDir.exists() && devfreqDir.isDirectory()) {
+            File[] files = devfreqDir.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    if (file.getName().startsWith("bus_mif") && new File(file, "volt_table").exists()) {
+                        return file.getAbsolutePath() + "/volt_table";
+                    }
+                }
+            }
+        }
+        if (new File("/sys/class/devfreq/bus_mif/volt_table").exists()) {
+            return "/sys/class/devfreq/bus_mif/volt_table";
+        }
+        return "/sys/class/devfreq/soc:bus_mif/volt_table";
+    }
 
     private static final HashMap<String, Boolean> sVoltages = new HashMap<>();
     private static final HashMap<String, Integer> sOffset = new HashMap<>();
@@ -139,7 +158,7 @@ public class VoltageMif {
     public static boolean supported() {
         if (PATH != null) return true;
         for (String path : sVoltages.keySet()) {
-            if (Utils.existFile(path)) {
+            if (new File(path).exists() || Utils.existFile(path)) {
                 PATH = path;
             }
         }
