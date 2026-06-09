@@ -21,10 +21,8 @@ package com.lavenly.hK3475.fragments.tools;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.drawable.DrawableCompat;
 import android.view.Menu;
 
 import com.lavenly.hK3475.R;
@@ -59,10 +57,7 @@ public class InitdFragment extends RecyclerViewFragment {
 
     @Override
     protected Drawable getTopFabDrawable() {
-        Drawable drawable = DrawableCompat.wrap(
-                ContextCompat.getDrawable(getActivity(), R.drawable.ic_add));
-        DrawableCompat.setTint(drawable, Color.WHITE);
-        return drawable;
+        return ContextCompat.getDrawable(getActivity(), R.drawable.ic_add);
     }
 
     @Override
