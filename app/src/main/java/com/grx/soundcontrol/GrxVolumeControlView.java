@@ -19,7 +19,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.lavenly.hK3475.R;
+import com.hades.hKtweaks.R;
 
 public class GrxVolumeControlView extends View {
 

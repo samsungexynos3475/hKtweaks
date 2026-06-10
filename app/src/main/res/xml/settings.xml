@@ -9,7 +9,7 @@
             android:key="reset_data"
             android:summary="@string/reset_data_summary"
             android:title="@string/reset_data_title" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="useretardedmeasurement"
             android:summary="@string/fahrenheit_summary"
             android:title="@string/fahrenheit_title" />
@@ -18,7 +18,7 @@
     <PreferenceCategory
         android:key="app_update"
         android:title="@string/app_update_category">
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="app_update_notif"
             android:defaultValue="true"
             android:title="@string/app_update_notif_title"
@@ -32,7 +32,7 @@
     <PreferenceCategory
         android:key="user_interface"
         android:title="@string/user_interface">
-        <com.lavenly.hK3475.views.preference.MaterialListPreference
+        <com.hades.hKtweaks.views.preference.MaterialListPreference
             android:key="theme_mode"
             android:title="@string/theme_mode"
             android:summary="%s"
@@ -40,21 +40,21 @@
             android:entries="@array/theme_modes"
             android:entryValues="@array/theme_mode_values"
             />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="forceenglish"
             android:title="@string/force_english" />
 <!--
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="materialicon"
             android:title="@string/material_icon" />
 -->
         <Preference
             android:key="banner_resizer"
             android:title="@string/banner_resizer" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="hide_banner"
             android:title="@string/hide_banner" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="forcecards"
             android:summary="@string/force_cards_summary"
             android:title="@string/force_cards" />
@@ -62,7 +62,7 @@
             android:key="theme_color"
             android:title="@string/theme_color"
             android:widgetLayout="@layout/preference_theme_color_view" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:defaultValue="true"
             android:key="section_icons"
             app:defaultValue="true"
@@ -71,7 +71,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/apply_on_boot">
-        <com.lavenly.hK3475.views.preference.MaterialListPreference
+        <com.hades.hKtweaks.views.preference.MaterialListPreference
             android:defaultValue="10"
             android:entries="@array/apply_on_boot_delay_entries"
             android:entryValues="@array/apply_on_boot_delay_values"
@@ -82,20 +82,20 @@
             android:key="applyonboottest"
             android:summary="@string/apply_on_boot_test_summary"
             android:title="@string/test" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="applyonboothide"
             android:summary="@string/apply_on_boot_hide_summary"
             android:title="@string/hide" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:defaultValue="true"
             android:key="applyonbootconfirmationnotification"
             android:summary="@string/apply_on_boot_confirmation_notification_summary"
             android:title="@string/confirmation_notification" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="applyonboottoast"
             android:summary="@string/apply_on_boot_toast_summary"
             android:title="@string/toast" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="applyonbootscript"
             android:summary="@string/apply_on_boot_script_summary"
             android:title="@string/script" />
@@ -128,7 +128,7 @@
         <Preference
             android:key="delete_password"
             android:title="@string/delete_password" />
-        <com.lavenly.hK3475.views.preference.MaterialSwitchPreference
+        <com.hades.hKtweaks.views.preference.MaterialSwitchPreference
             android:key="fingerprint"
             android:summary="@string/fingerprint_summary"
             android:title="@string/fingerprint" />

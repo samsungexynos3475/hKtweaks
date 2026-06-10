@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import com.google.android.material.slider.Slider;
 import com.google.android.material.textview.MaterialTextView;
-import com.lavenly.hK3475.R;
-import com.lavenly.hK3475.utils.kernel.sound.MoroSound;
+import com.hades.hKtweaks.R;
+import com.hades.hKtweaks.utils.kernel.sound.MoroSound;
 
 public class GrxEqualizerBandController extends LinearLayout {
 

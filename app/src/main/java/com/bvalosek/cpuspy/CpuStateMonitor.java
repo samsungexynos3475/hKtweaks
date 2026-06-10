@@ -12,8 +12,8 @@ import android.os.SystemClock;
 import androidx.annotation.NonNull;
 import android.util.SparseArray;
 
-import com.lavenly.hK3475.utils.Utils;
-import com.lavenly.hK3475.utils.kernel.cpu.CPUFreq;
+import com.hades.hKtweaks.utils.Utils;
+import com.hades.hKtweaks.utils.kernel.cpu.CPUFreq;
 
 import java.util.ArrayList;
 import java.util.Collections;

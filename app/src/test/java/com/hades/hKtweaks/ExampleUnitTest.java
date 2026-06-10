@@ -1,4 +1,4 @@
-package com.lavenly.hK3475;
+package com.hades.hKtweaks;
 
 import org.junit.Test;
 
