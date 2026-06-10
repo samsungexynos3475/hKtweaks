@@ -27,6 +27,7 @@ import com.lavenly.hK3475.fragments.ApplyOnBootFragment;
 import com.lavenly.hK3475.fragments.recyclerview.RecyclerViewFragment;
 import com.lavenly.hK3475.utils.AppSettings;
 import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.ViewUtils;
 import com.lavenly.hK3475.utils.kernel.vm.VM;
 import com.lavenly.hK3475.utils.kernel.vm.ZRAM;
 import com.lavenly.hK3475.utils.kernel.vm.ZSwap;
@@ -85,7 +86,7 @@ public class VMFragment extends RecyclerViewFragment {
         swap.setTitle("SWAP");
         swap.setItems(swap_total, swap_progress);
         swap.setUnit(getResources().getString(R.string.mb));
-        swap.setProgressColor(getResources().getColor(R.color.blueAccent));
+        swap.setProgressColor(ViewUtils.getColorSecondaryColor(requireContext()));
         card.addItem(swap);
 
         long mem_total = mMemInfo.getItemMb("MemTotal");
@@ -95,7 +96,7 @@ public class VMFragment extends RecyclerViewFragment {
         mem.setTitle("RAM");
         mem.setItems(mem_total, mem_progress);
         mem.setUnit(getResources().getString(R.string.mb));
-        mem.setProgressColor(getResources().getColor(R.color.orangeAccent));
+        mem.setProgressColor(ViewUtils.getThemeColor(requireContext(), R.attr.colorTertiary));
         card.addItem(mem);
         card.setFullSpan(true);
         items.add(card);
