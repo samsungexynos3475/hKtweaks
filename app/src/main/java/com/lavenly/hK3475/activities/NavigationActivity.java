@@ -90,6 +90,7 @@ import com.lavenly.hK3475.fragments.tools.downloads.DownloadsFragment;
 import com.lavenly.hK3475.services.monitor.Monitor;
 import com.lavenly.hK3475.utils.AppSettings;
 import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.ExpressiveMotion;
 import com.lavenly.hK3475.utils.Utils;
 import com.lavenly.hK3475.utils.kernel.battery.Battery;
 import com.lavenly.hK3475.utils.kernel.bus.VoltageCam;
@@ -513,7 +514,10 @@ public class NavigationActivity extends BaseActivity
                     getSupportFragmentManager().beginTransaction().replace(
                             R.id.content_frame, fragment, res + "_key").commitAllowingStateLoss();
                 },
-                250);
+                ExpressiveMotion.resolveDuration(
+                        this,
+                        com.google.android.material.R.attr.motionDurationMedium1,
+                        250));
     }
 
     private Fragment getFragment(int res) {

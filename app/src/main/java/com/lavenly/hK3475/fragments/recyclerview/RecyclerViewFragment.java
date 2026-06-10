@@ -64,6 +64,7 @@ import com.lavenly.hK3475.activities.NavigationActivity;
 import com.lavenly.hK3475.fragments.BaseFragment;
 import com.lavenly.hK3475.fragments.LoadingFragment;
 import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.ExpressiveMotion;
 import com.lavenly.hK3475.utils.Utils;
 import com.lavenly.hK3475.utils.ViewUtils;
 import com.lavenly.hK3475.views.dialog.ViewPagerDialog;
@@ -320,7 +321,11 @@ public abstract class RecyclerViewFragment extends BaseFragment {
                                     fragment.mViewPagerShadow.setVisibility(View.VISIBLE);
                                 }
                             });
-                            animator.setDuration(400);
+                            ExpressiveMotion.applyEmphasizedDecelerate(
+                                    animator,
+                                    activity,
+                                    com.google.android.material.R.attr.motionDurationMedium4,
+                                    400);
                             animator.start();
                         }
                     }
@@ -614,6 +619,11 @@ public abstract class RecyclerViewFragment extends BaseFragment {
                         mAlphaAnimator = null;
                     }
                 });
+                ExpressiveMotion.applyEmphasized(
+                        mAlphaAnimator,
+                        requireContext(),
+                        com.google.android.material.R.attr.motionDurationShort4,
+                        200);
                 mAlphaAnimator.start();
             }
         }
@@ -634,6 +644,11 @@ public abstract class RecyclerViewFragment extends BaseFragment {
                 mAppBarLayoutDistance = (int) animation.getAnimatedValue();
                 mAppBarLayout.setTranslationY(-mAppBarLayoutDistance);
             });
+            ExpressiveMotion.applyEmphasized(
+                    animator,
+                    requireContext(),
+                    com.google.android.material.R.attr.motionDurationMedium2,
+                    300);
             animator.start();
         }
     }
@@ -686,7 +701,8 @@ public abstract class RecyclerViewFragment extends BaseFragment {
         }
 
         view.setVisibility(View.VISIBLE);
-        mSlideInOutAnimation = AnimationUtils.loadAnimation(getActivity(), android.R.anim.fade_in);
+        mSlideInOutAnimation = AnimationUtils.loadAnimation(
+                getActivity(), R.anim.m3_expressive_fade_enter);
         mSlideInOutAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -700,7 +716,6 @@ public abstract class RecyclerViewFragment extends BaseFragment {
             public void onAnimationRepeat(Animation animation) {
             }
         });
-        mSlideInOutAnimation.setDuration(250);
         view.startAnimation(mSlideInOutAnimation);
     }
 
@@ -709,7 +724,8 @@ public abstract class RecyclerViewFragment extends BaseFragment {
             mSlideInOutAnimation.cancel();
         }
 
-        mSlideInOutAnimation = AnimationUtils.loadAnimation(getActivity(), android.R.anim.fade_out);
+        mSlideInOutAnimation = AnimationUtils.loadAnimation(
+                getActivity(), R.anim.m3_expressive_fade_exit);
         mSlideInOutAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -724,7 +740,6 @@ public abstract class RecyclerViewFragment extends BaseFragment {
             public void onAnimationRepeat(Animation animation) {
             }
         });
-        mSlideInOutAnimation.setDuration(250);
         view.startAnimation(mSlideInOutAnimation);
     }
 

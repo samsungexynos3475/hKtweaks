@@ -40,6 +40,7 @@ import com.lavenly.hK3475.fragments.kernel.GPUFragment;
 import com.lavenly.hK3475.services.profile.Tile;
 import com.lavenly.hK3475.utils.AppSettings;
 import com.lavenly.hK3475.utils.Device;
+import com.lavenly.hK3475.utils.Log;
 import com.lavenly.hK3475.utils.Utils;
 import com.lavenly.hK3475.utils.kernel.battery.Battery;
 import com.lavenly.hK3475.utils.kernel.bus.VoltageCam;
@@ -327,11 +328,19 @@ public class MainActivity extends BaseActivity {
                 publishProgress(1);
 
                 if (mHasBusybox) {
-                    collectData();
+                    try {
+                        collectData();
+                    } catch (RuntimeException exception) {
+                        Log.e("Startup data collection failed: " + exception);
+                    }
                     publishProgress(2);
-                }
 
-                checkInitVariables();
+                    try {
+                        checkInitVariables();
+                    } catch (RuntimeException exception) {
+                        Log.e("Startup initialization failed: " + exception);
+                    }
+                }
             }
             return null;
         }

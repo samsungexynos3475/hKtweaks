@@ -37,6 +37,7 @@ import android.widget.LinearLayout;
 
 import com.lavenly.hK3475.R;
 import com.lavenly.hK3475.utils.AppSettings;
+import com.lavenly.hK3475.utils.ExpressiveMotion;
 import com.lavenly.hK3475.utils.Utils;
 import com.lavenly.hK3475.utils.ViewUtils;
 import com.lavenly.hK3475.views.dialog.Dialog;
@@ -164,7 +165,15 @@ public class NavHeaderView extends LinearLayout {
                 mImage.setVisibility(VISIBLE);
             }
         });
-        animator.setStartDelay(500);
+        ExpressiveMotion.applyEmphasizedDecelerate(
+                animator,
+                getContext(),
+                com.google.android.material.R.attr.motionDurationMedium4,
+                400);
+        animator.setStartDelay(ExpressiveMotion.resolveDuration(
+                getContext(),
+                com.google.android.material.R.attr.motionDurationMedium2,
+                300));
         animator.start();
     }
 
